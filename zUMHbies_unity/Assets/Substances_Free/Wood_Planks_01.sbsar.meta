@@ -4,7 +4,7 @@ SubstanceImporter:
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 10
-    name: Wood_Planks_01
+    name: Wood_Bright
     prototypeName: Wood_Planks_01
     shaderName: Bumped Specular
     inputs:
@@ -24,35 +24,35 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: $randomseed
       value:
-        scalar[0]: 0
+        scalar[0]: 2569
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Boards
       value:
-        scalar[0]: 5
+        scalar[0]: .850000024
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Sharpen
       value:
-        scalar[0]: .5
+        scalar[0]: 1
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Wood_Grain
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Depth
       value:
-        scalar[0]: 0
+        scalar[0]: 1
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -66,21 +66,21 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Normal
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Emboss
       value:
-        scalar[0]: 5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Angle
       value:
-        scalar[0]: .125
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -140,43 +140,43 @@ SubstanceImporter:
         data:
           first:
             name: _Shininess
-          second: .078125
+          second: .167560488
       colors:
         data:
           first:
             name: _Color
-          second: {r: 1, g: 1, b: 1, a: 1}
+          second: {r: 1, g: .817986846, b: .25, a: 1}
         data:
           first:
             name: _SpecColor
-          second: {r: .5, g: .5, b: .5, a: 1}
+          second: {r: 1, g: 1, b: 1, a: 1}
     textureParameters:
-    - name: Wood_Planks_01_Diffuse
+    - name: Wood_Bright_Diffuse
       alphaSource: 5
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Wood_Planks_01_Specular
+    - name: Wood_Bright_Specular
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Wood_Planks_01_Normal
+    - name: Wood_Bright_Normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Wood_Planks_01_Bump
+    - name: Wood_Bright_Bump
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Wood_Planks_01_Displacement
+    - name: Wood_Bright_Displacement
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Wood_Planks_01_Height
+    - name: Wood_Bright_Height
       alphaSource: 0
       filterMode: 1
       aniso: 1
