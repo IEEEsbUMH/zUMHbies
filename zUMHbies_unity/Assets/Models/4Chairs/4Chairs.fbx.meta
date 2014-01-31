@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 590bd15e9ca7eb246a0da7141fc04333
+guid: 14cbd262f23a3c0439f86ef4bc3f2f25
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -50,6 +50,15 @@ ModelImporter:
     4300012: SoporteSillas
     4300014: SillaDcha
     4300016: RejaDcha
+    6400000: RejaCntrDcha
+    6400002: RejaCntrIzq
+    6400004: RejaDcha
+    6400006: RejaIzq
+    6400008: SillaCntrDcha
+    6400010: SillaCntrIzq
+    6400012: SillaDcha
+    6400014: SillaIzq
+    6400016: SoporteSillas
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -72,7 +81,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .150000006
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
