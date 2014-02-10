@@ -9,6 +9,7 @@ public class Interact : MonoBehaviour
 
 		private Ray myRay;
 		private RaycastHit rayHit;
+		private GameObject activeGameObject; //reference to the Gameobject containing the IInteractive, used for performance reasons
 		private IInteractive activeInteractiveObject;
 
 
@@ -19,16 +20,23 @@ public class Interact : MonoBehaviour
 
 				myRay = new Ray (POV.position, POV.forward);
 				if (Physics.Raycast (myRay, out rayHit, RayDistance)) {
-						MonoBehaviour[] ScriptComponents = rayHit.collider.gameObject.GetComponents<MonoBehaviour> ();
-		
-						foreach (MonoBehaviour b_behaviour in ScriptComponents) {
-								activeInteractiveObject = b_behaviour as IInteractive;
-								if (activeInteractiveObject != null)
-										break;
-								
-						}
 
+						if (activeInteractiveObject != null) {
+								if (rayHit.collider.gameObject != activeGameObject) { //Old IInteractive is no longer active, thus we run the recognition code again
+										MonoBehaviour[] ScriptComponents = rayHit.collider.gameObject.GetComponents<MonoBehaviour> ();
+					
+										foreach (MonoBehaviour b_behaviour in ScriptComponents) {
+												activeInteractiveObject = b_behaviour as IInteractive;
+												if (activeInteractiveObject != null) {
+														activeGameObject = b_behaviour.gameObject;
+														break;
+												}
+						
+										}
+								}
+						}	
 				} else {
+						activeGameObject = null;
 						activeInteractiveObject = null;
 				}
 

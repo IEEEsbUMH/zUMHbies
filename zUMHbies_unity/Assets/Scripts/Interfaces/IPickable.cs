@@ -7,4 +7,14 @@ public interface IPickable
 				get;
 				set;
 		}
+
+		string Name {
+				get;
+				set;
+		}
+
+		Texture2D Picture {
+				get;
+				set;
+		}
 }

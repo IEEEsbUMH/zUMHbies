@@ -5,12 +5,14 @@ public class ItemManagement : MonoBehaviour
 {
 
 		public int BagSize;
-		private IPickable[] bagContent;
+		public IPickable[] bagContent;
+		public IPickable[] handsContent;
 
 		// Use this for initialization
 		void Start ()
 		{
 				bagContent = new IPickable[BagSize];
+				handsContent = new IPickable[2];
 		}
 	
 		public bool StorePickable (IPickable a_pickable)
