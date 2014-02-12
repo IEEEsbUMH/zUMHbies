@@ -42,8 +42,12 @@ public class InventoryLayout : MonoBehaviour
 				GUIContent t_emptyContent = new GUIContent ("Vacío");
 
 				for (int i=0; i<playerInventory.Length; i++) {
-						GUIContent t_newContent = new GUIContent (playerInventory [i].Name, playerInventory [i].Picture);
-						t_inventoryContent [i] = t_newContent;
+						if(playerInventory[i]!=null){
+							GUIContent t_newContent = new GUIContent (playerInventory[i].Name, playerInventory[i].Picture);
+							t_inventoryContent [i] = t_newContent;
+						} else {
+							t_inventoryContent [i] = t_emptyContent;
+						}
 				}
 				t_inventoryContent [t_inventoryContent.Length - 1] = t_emptyContent;
 
