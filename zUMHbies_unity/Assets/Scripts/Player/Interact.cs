@@ -21,37 +21,36 @@ public class Interact : MonoBehaviour
 				myRay = new Ray (POV.position, POV.forward);
 				if (Physics.Raycast (myRay, out rayHit, RayDistance)) {
 
-						if (activeInteractiveObject != null) {
-								if (rayHit.collider.gameObject != activeGameObject) { //Old IInteractive is no longer active, thus we run the recognition code again
-										MonoBehaviour[] ScriptComponents = rayHit.collider.gameObject.GetComponents<MonoBehaviour> ();
+						if (activeGameObject == null || (activeGameObject != null && rayHit.collider.gameObject != activeGameObject)) { //Old IInteractive is no longer active, thus we run the recognition code again
+								MonoBehaviour[] ScriptComponents = rayHit.collider.gameObject.GetComponents<MonoBehaviour> ();
 					
-										foreach (MonoBehaviour b_behaviour in ScriptComponents) {
-												activeInteractiveObject = b_behaviour as IInteractive;
-												if (activeInteractiveObject != null) {
-														activeGameObject = b_behaviour.gameObject;
-														break;
-												}
-						
+								foreach (MonoBehaviour b_behaviour in ScriptComponents) {
+										activeInteractiveObject = b_behaviour as IInteractive;
+										if (activeInteractiveObject != null) {
+												activeGameObject = b_behaviour.gameObject;
+												break;
 										}
 								}
-						}	
+						}
+							
 				} else {
 						activeGameObject = null;
 						activeInteractiveObject = null;
 				}
 
-				if (Input.GetAxis ("Interact") > 0)
+				if (Input.GetButtonDown ("Interact"))
 						Activate ();
 				
 
-				if (Input.GetAxis ("PickUp") > 0)
+				if (Input.GetButtonDown ("PickUp"))
 						PickUp ();
 		}
 
 		void Activate ()
 		{
-				if (activeInteractiveObject != null)
+				if (activeInteractiveObject != null) {
 						activeInteractiveObject.Activate ();
+				}
 		}
 
 		void PickUp ()
