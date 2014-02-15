@@ -1,64 +1,25 @@
 fileFormatVersion: 2
-guid: 14cbd262f23a3c0439f86ef4bc3f2f25
+guid: f4fea1821eef0f7499bfe5e4daf040ae
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
     100000: //RootNode
-    100002: RejaCntrDcha
-    100004: RejaCntrIzq
-    100006: RejaDcha
-    100008: RejaIzq
-    100010: SillaCntrDcha
-    100012: SillaCntrIzq
-    100014: SillaDcha
-    100016: SillaIzq
-    100018: SoporteSillas
+    100002: RejaSilla
+    100004: Silla
+    100006: SoporteSillas
     400000: //RootNode
-    400002: RejaCntrDcha
-    400004: RejaCntrIzq
-    400006: RejaDcha
-    400008: RejaIzq
-    400010: SillaCntrDcha
-    400012: SillaCntrIzq
-    400014: SillaDcha
-    400016: SillaIzq
-    400018: SoporteSillas
-    2300000: RejaCntrDcha
-    2300002: RejaCntrIzq
-    2300004: RejaDcha
-    2300006: RejaIzq
-    2300008: SillaCntrDcha
-    2300010: SillaCntrIzq
-    2300012: SillaDcha
-    2300014: SillaIzq
-    2300016: SoporteSillas
-    3300000: RejaCntrDcha
-    3300002: RejaCntrIzq
-    3300004: RejaDcha
-    3300006: RejaIzq
-    3300008: SillaCntrDcha
-    3300010: SillaCntrIzq
-    3300012: SillaDcha
-    3300014: SillaIzq
-    3300016: SoporteSillas
-    4300000: RejaIzq
-    4300002: RejaCntrIzq
-    4300004: RejaCntrDcha
-    4300006: SillaIzq
-    4300008: SillaCntrIzq
-    4300010: SillaCntrDcha
-    4300012: SoporteSillas
-    4300014: SillaDcha
-    4300016: RejaDcha
-    6400000: RejaCntrDcha
-    6400002: RejaCntrIzq
-    6400004: RejaDcha
-    6400006: RejaIzq
-    6400008: SillaCntrDcha
-    6400010: SillaCntrIzq
-    6400012: SillaDcha
-    6400014: SillaIzq
-    6400016: SoporteSillas
+    400002: RejaSilla
+    400004: Silla
+    400006: SoporteSillas
+    2300000: RejaSilla
+    2300002: Silla
+    2300004: SoporteSillas
+    3300000: RejaSilla
+    3300002: Silla
+    3300004: SoporteSillas
+    4300000: SoporteSillas
+    4300002: Silla
+    4300004: RejaSilla
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -79,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .150000006
+    globalScale: .5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
