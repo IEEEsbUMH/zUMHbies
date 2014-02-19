@@ -31,7 +31,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Age
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -59,14 +59,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Middle_Pattern_Tiling
       value:
-        scalar[0]: 2
+        scalar[0]: 1.30999994
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Patterns_01_Size
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -80,7 +80,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Patterns_02_Size
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
