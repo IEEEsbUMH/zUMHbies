@@ -4,7 +4,7 @@ SubstanceImporter:
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 10
-    name: concrete_049
+    name: Column_Concrete
     prototypeName: concrete_049
     shaderName: Bumped Specular
     inputs:
@@ -31,28 +31,28 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Cracks
       value:
-        scalar[0]: .493999988
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Dirtiness
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: First_Layer_Color
       value:
-        scalar[0]: .694100022
-        scalar[1]: .603900015
-        scalar[2]: .490200013
+        scalar[0]: .698529422
+        scalar[1]: .698529422
+        scalar[2]: .698529422
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Light_Angle
       value:
-        scalar[0]: .125
+        scalar[0]: .155000001
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -66,14 +66,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Peeling
       value:
-        scalar[0]: .25
+        scalar[0]: .150000006
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Rust
       value:
-        scalar[0]: 1
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -87,14 +87,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Second_Layer_Color
       value:
-        scalar[0]: .392199993
-        scalar[1]: .341199994
-        scalar[2]: .2667
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Top_Frame
       value:
-        scalar[0]: 1
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -182,43 +182,43 @@ SubstanceImporter:
         data:
           first:
             name: _Shininess
-          second: .078125
+          second: .0300000031
       colors:
         data:
           first:
             name: _Color
-          second: {r: 1, g: 1, b: 1, a: 1}
+          second: {r: .757352948, g: .757352948, b: .757352948, a: 1}
         data:
           first:
             name: _SpecColor
           second: {r: .5, g: .5, b: .5, a: 1}
     textureParameters:
-    - name: concrete_049_Diffuse
+    - name: Column_Concrete_Diffuse
       alphaSource: 5
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: concrete_049_Specular
+    - name: Column_Concrete_Specular
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: concrete_049_Normal
+    - name: Column_Concrete_Normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: concrete_049_Bump
+    - name: Column_Concrete_Bump
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: concrete_049_Displacement
+    - name: Column_Concrete_Displacement
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: concrete_049_Height
+    - name: Column_Concrete_Height
       alphaSource: 0
       filterMode: 1
       aniso: 1
