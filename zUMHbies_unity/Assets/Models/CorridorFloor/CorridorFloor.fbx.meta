@@ -1,34 +1,14 @@
 fileFormatVersion: 2
-guid: 680c3f2c1904141bd8b49095bc7f1edd
+guid: 51b8d382f10ba420eb761ed497a90191
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: Bar1
-    100002: Bar2
-    100004: Bar3
-    100006: //RootNode
-    100008: Walls
-    400000: Bar1
-    400002: Bar2
-    400004: Bar3
-    400006: //RootNode
-    400008: Walls
-    2300000: Bar1
-    2300002: Bar2
-    2300004: Bar3
-    2300006: Walls
-    3300000: Bar1
-    3300002: Bar2
-    3300004: Bar3
-    3300006: Walls
-    4300000: Bar3
-    4300002: Bar2
-    4300004: Bar1
-    4300006: Walls
-    6400000: Bar1
-    6400002: Bar2
-    6400004: Bar3
-    6400006: Walls
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Plane
+    6400000: //RootNode
     7400000: Default Take
     9500000: //RootNode
   materials:
