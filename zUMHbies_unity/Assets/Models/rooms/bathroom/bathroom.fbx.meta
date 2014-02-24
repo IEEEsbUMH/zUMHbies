@@ -1,35 +1,34 @@
 fileFormatVersion: 2
-guid: 81a3a932cdc024fd0996e5d370a107c4
+guid: 6a4c94db174c24e68b3d1fdd8a068cce
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: HandleBack
-    100004: HandleMain
-    100006: MainDoor
-    100008: Marco
-    100010: SecDoor
+    100002: Ceiling
+    100004: Floor
+    100006: Inside
+    100008: Outside
     400000: //RootNode
-    400002: HandleBack
-    400004: HandleMain
-    400006: MainDoor
-    400008: Marco
-    400010: SecDoor
-    2300000: HandleBack
-    2300002: HandleMain
-    2300004: MainDoor
-    2300006: Marco
-    2300008: SecDoor
-    3300000: HandleBack
-    3300002: HandleMain
-    3300004: MainDoor
-    3300006: Marco
-    3300008: SecDoor
-    4300000: Marco
-    4300002: HandleMain
-    4300004: MainDoor
-    4300006: SecDoor
-    4300008: HandleBack
+    400002: Ceiling
+    400004: Floor
+    400006: Inside
+    400008: Outside
+    2300000: Ceiling
+    2300002: Floor
+    2300004: Inside
+    2300006: Outside
+    3300000: Ceiling
+    3300002: Floor
+    3300004: Inside
+    3300006: Outside
+    4300000: Floor
+    4300002: Ceiling
+    4300004: Inside
+    4300006: Outside
+    6400000: Ceiling
+    6400002: Floor
+    6400004: Inside
+    6400006: Outside
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -52,7 +51,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
