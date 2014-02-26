@@ -1,34 +1,46 @@
 fileFormatVersion: 2
-guid: 9cc716a2f4d8f4438984b98b2d51bffc
+guid: 40eefd5d1aed940a78c167b027e9546b
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Ceiling
-    100004: Floor
-    100006: Inside
-    100008: Outside
+    100002: HandleBack
+    100004: HandleHolder
+    100006: HandleMain
+    100008: MainDoor
+    100010: Marco
+    100012: SecDoor
     400000: //RootNode
-    400002: Ceiling
-    400004: Floor
-    400006: Inside
-    400008: Outside
-    2300000: Ceiling
-    2300002: Floor
-    2300004: Inside
-    2300006: Outside
-    3300000: Ceiling
-    3300002: Floor
-    3300004: Inside
-    3300006: Outside
-    4300000: Floor
-    4300002: Ceiling
-    4300004: Inside
-    4300006: Outside
-    6400000: Ceiling
-    6400002: Floor
-    6400004: Inside
-    6400006: Outside
+    400002: HandleBack
+    400004: HandleHolder
+    400006: HandleMain
+    400008: MainDoor
+    400010: Marco
+    400012: SecDoor
+    2300000: HandleBack
+    2300002: HandleHolder
+    2300004: HandleMain
+    2300006: MainDoor
+    2300008: Marco
+    2300010: SecDoor
+    3300000: HandleBack
+    3300002: HandleHolder
+    3300004: HandleMain
+    3300006: MainDoor
+    3300008: Marco
+    3300010: SecDoor
+    4300000: SecDoor
+    4300002: Marco
+    4300004: MainDoor
+    4300006: HandleHolder
+    4300008: HandleMain
+    4300010: HandleBack
+    6400000: HandleBack
+    6400002: HandleHolder
+    6400004: HandleMain
+    6400006: MainDoor
+    6400008: Marco
+    6400010: SecDoor
     7400000: Default Take
     9500000: //RootNode
   materials:
