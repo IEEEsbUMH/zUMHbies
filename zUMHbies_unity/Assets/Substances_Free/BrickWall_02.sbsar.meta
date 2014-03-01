@@ -6,7 +6,7 @@ SubstanceImporter:
   - serializedVersion: 10
     name: BrickWall
     prototypeName: BrickWall_02
-    shaderName: Parallax Specular
+    shaderName: Parallax Diffuse
     inputs:
     - name: $normalformat
       value:
@@ -31,7 +31,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Age
       value:
-        scalar[0]: .372000009
+        scalar[0]: .398999989
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -66,7 +66,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Normal
       value:
-        scalar[0]: .5
+        scalar[0]: .150000006
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -151,7 +151,7 @@ SubstanceImporter:
         data:
           first:
             name: _Parallax
-          second: .0199999996
+          second: .0307142846
       colors:
         data:
           first:

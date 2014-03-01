@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40eefd5d1aed940a78c167b027e9546b
+guid: 8be3d34f69ccc49f1bf45c0264bac8d8
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -35,12 +35,6 @@ ModelImporter:
     4300006: HandleHolder
     4300008: HandleMain
     4300010: HandleBack
-    6400000: HandleBack
-    6400002: HandleHolder
-    6400004: HandleMain
-    6400006: MainDoor
-    6400008: Marco
-    6400010: SecDoor
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -63,7 +57,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
