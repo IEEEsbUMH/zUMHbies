@@ -1,30 +1,20 @@
 fileFormatVersion: 2
-guid: 2e046143017f4e54cb426f4b5eeb6a1d
+guid: ea89300a78c094296b7f53c9208ec895
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: cover
+    100000: holder
     100002: //RootNode
-    100004: toilet
-    100006: holder
-    100008: washers
-    400000: cover
+    100004: washers
+    400000: holder
     400002: //RootNode
-    400004: toilet
-    400006: holder
-    400008: washers
-    2300000: cover
-    2300002: toilet
-    2300004: holder
-    2300006: washers
-    3300000: cover
-    3300002: toilet
-    3300004: holder
-    3300006: washers
-    4300000: toilet
-    4300002: cover
-    4300004: washers
-    4300006: holder
+    400004: washers
+    2300000: holder
+    2300002: washers
+    3300000: holder
+    3300002: washers
+    4300000: washers
+    4300002: holder
     7400000: Default Take
     9500000: //RootNode
   materials:

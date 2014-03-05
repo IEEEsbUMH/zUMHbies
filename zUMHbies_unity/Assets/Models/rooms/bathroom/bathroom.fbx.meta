@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9cc716a2f4d8f4438984b98b2d51bffc
+guid: a4b41a1a99643412cae6973759402c60
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -25,10 +25,6 @@ ModelImporter:
     4300002: Ceiling
     4300004: Inside
     4300006: Outside
-    6400000: Ceiling
-    6400002: Floor
-    6400004: Inside
-    6400006: Outside
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -51,7 +47,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
