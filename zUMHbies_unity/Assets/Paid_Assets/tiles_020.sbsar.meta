@@ -51,15 +51,15 @@ SubstanceImporter:
     - name: Color_1
       value:
         scalar[0]: 1
-        scalar[1]: .981744468
-        scalar[2]: .338235319
+        scalar[1]: .981947303
+        scalar[2]: .345588207
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Color_2
       value:
-        scalar[0]: .78039217
-        scalar[1]: .768627465
-        scalar[2]: .192156866
+        scalar[0]: .0334685184
+        scalar[1]: .970588207
+        scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Color_Variation

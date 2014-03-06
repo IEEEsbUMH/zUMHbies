@@ -12,7 +12,7 @@ public class ContainedPhysicsBehaviour : MonoBehaviour
 	
 		public void SetFree ()
 		{
-				transform.parent = null;
+				transform.parent = transform.parent.parent; //Transform goes up one level in the hierarchy
 
 				if (rigidbody != null)
 						rigidbody.isKinematic = false;

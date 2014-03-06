@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Interfaces/IBreakable.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Chairs4Behaviour.cs">
     <Files>
       <File FileName="Assets/Scripts/Interfaces/IBreakable.cs" Line="13" Column="14" />
-      <File FileName="Assets/Scripts/Chairs4Behaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Chairs4Behaviour.cs" Line="15" Column="14" />
+      <File FileName="Assets/Scripts/ContainedPhysicsBehaviour.cs" Line="25" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
