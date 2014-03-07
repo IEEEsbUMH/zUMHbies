@@ -31,6 +31,7 @@ public class ItemManagement : MonoBehaviour
 				}
 		}
 
+		//Takes object IPickable away from inventory and returns it
 		public IPickable RetrievePickable (int a_index)
 		{
 				IPickable r_pickable = bagContent [a_index];
@@ -39,6 +40,19 @@ public class ItemManagement : MonoBehaviour
 				return r_pickable;
 		}
 
+		//Places something from inventory in a hand
+		public void PlaceInHand (int a_inventoryIndex, int a_handIndex)
+		{
+				IPickable t_auxiliar = handsContent [a_handIndex];
+				handsContent [a_handIndex] = RetrievePickable (a_inventoryIndex);
+
+				//Hand is already full, exchange items
+				if (handsContent [a_handIndex] != null) {
+						StorePickable (t_auxiliar);
+				}
+		}
+
+		//Reorders inventory to prevent gaps between content
 		void OrderContent ()
 		{
 				IPickable[] t_newArray = new IPickable[BagSize];

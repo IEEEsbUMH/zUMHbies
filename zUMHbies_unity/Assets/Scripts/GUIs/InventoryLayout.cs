@@ -3,77 +3,79 @@ using System.Collections;
 
 public class InventoryLayout : MonoBehaviour
 {
-		public Rect MainBoxRect;
-		public Rect InventoryRect;
-		public Rect InternalInventoryRect;
-		public Rect HandsRect;
-		public Vector2 ItemsButtonSize;
-
-		public Rect ToLeftRect;
-		public Rect ToRightRect;
-
 		public GameObject Player;
+		public bool DisplayingInventory;
 
-		private ItemManagement playerItemManagment;
-		private IPickable[] playerInventory;
-		private IPickable[] playerHands;
+		public GUIStyle UnselectedStyle;
+		public GUIStyle SelectedStyle;
 
-		private int inventorySelectionIndex;
-		private int handsSelectionIndex;
+		public Vector2 BoxDimensions;
+		public int VerticalDistance;
+		public int HorizontalDistance;
+
+		private ItemManagement playerItemManagement;
+		private int selectedIndex;
 		
 		// Use this for initialization
 		void Start ()
 		{
-				playerItemManagment = Player.GetComponent<ItemManagement> ();
+				playerItemManagement = Player.GetComponent<ItemManagement> ();
+				selectedIndex = 0;
+		}
 
-				inventorySelectionIndex = -1;
-				handsSelectionIndex = -1;
+		void FixedUpdate ()
+		{
+				if (Input.GetButtonDown ("Inventory")) {
+						DisplayingInventory = !DisplayingInventory;
+				}
+
+				if (DisplayingInventory) {
+						if (Input.GetButtonDown ("InventoryUp")) {
+								selectedIndex -= 1;
+						}
+						if (Input.GetButtonDown ("InventoryDown")) {
+								selectedIndex += 1;
+						}
+				}
 		}
 	
 		// OnGUI is called once per frame
 		void OnGUI ()
 		{
-				playerInventory = playerItemManagment.bagContent;
-				playerHands = playerItemManagment.handsContent;
+				//Returns if not displaying inventory
+				if (!DisplayingInventory)
+						return;
+
+				if (selectedIndex > playerItemManagement.BagSize - 1)
+						selectedIndex = 0;
+
+				if (selectedIndex < 0)
+						selectedIndex = playerItemManagement.BagSize - 1;
 				
-				GUIContent[] t_inventoryContent = new GUIContent[playerInventory.Length + 1];
-				GUIContent[] t_handsContent = new GUIContent[2];
 
-				GUIContent t_emptyContent = new GUIContent ("Vacío");
+				//Bag Content
+				for (int i=0; i<playerItemManagement.BagSize; i++) {
+						GUIContent b_content;
 
-				for (int i=0; i<playerInventory.Length; i++) {
-						if(playerInventory[i]!=null){
-							GUIContent t_newContent = new GUIContent (playerInventory[i].Name, playerInventory[i].Picture);
-							t_inventoryContent [i] = t_newContent;
-						} else {
-							t_inventoryContent [i] = t_emptyContent;
-						}
+						if (playerItemManagement.bagContent [i] != null) {
+								b_content = new GUIContent (playerItemManagement.bagContent [i].Name);
+						} else
+								b_content = GUIContent.none;
+
+						GUI.Box (new Rect ((Screen.width - BoxDimensions.x) / 2, (Screen.height - BoxDimensions.y) / 2 - (selectedIndex - i) * VerticalDistance, BoxDimensions.x, BoxDimensions.y), b_content, UnselectedStyle);
 				}
-				t_inventoryContent [t_inventoryContent.Length - 1] = t_emptyContent;
 
+				//Hands Content
+				//Bag Content
 				for (int i=0; i<2; i++) {
-						if (playerHands [i] != null) {
-								GUIContent t_newContent = new GUIContent (playerHands [i].Name, playerHands [i].Picture);
-								t_handsContent [i] = t_newContent;
-						} else {
-								t_handsContent [i] = t_emptyContent;
-						}
-				}
-
-				//GUI.BeginGroup (MainBoxRect, "Inventory");
-				GUI.BeginScrollView (InventoryRect, new Vector2 (), InternalInventoryRect);
-				inventorySelectionIndex = GUI.Toolbar (InternalInventoryRect, inventorySelectionIndex, t_inventoryContent);
-				GUI.EndScrollView ();
-				handsSelectionIndex = GUI.Toolbar (HandsRect, handsSelectionIndex, t_handsContent);
-				//GUI.EndGroup ();
-		}
-
-		void CheckSwitch ()
-		{
-				if (inventorySelectionIndex != playerInventory.Length) {
-						IPickable t_switch = playerInventory [inventorySelectionIndex];
-						playerInventory [inventorySelectionIndex] = playerHands [handsSelectionIndex];
-						playerHands [handsSelectionIndex] = t_switch;
+						GUIContent b_content;
+			
+						if (playerItemManagement.handsContent [i] != null) {
+								b_content = new GUIContent (playerItemManagement.handsContent [i].Name);
+						} else
+								b_content = GUIContent.none;
+			
+						GUI.Box (new Rect ((Screen.width - BoxDimensions.x) / 2 - HorizontalDistance * (i == 0 ? 1 : -1) / 2, (Screen.height - BoxDimensions.y) / 2, BoxDimensions.x, BoxDimensions.y), b_content);
 				}
 		}
 }
