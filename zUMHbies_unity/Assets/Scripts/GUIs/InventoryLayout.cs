@@ -38,8 +38,7 @@ public class InventoryLayout : MonoBehaviour
 						}
 				}
 		}
-	
-		// OnGUI is called once per frame
+
 		void OnGUI ()
 		{
 				//Returns if not displaying inventory
@@ -58,7 +57,7 @@ public class InventoryLayout : MonoBehaviour
 						GUIContent b_content;
 
 						if (playerItemManagement.bagContent [i] != null) {
-								b_content = new GUIContent (playerItemManagement.bagContent [i].Name);
+								b_content = new GUIContent (playerItemManagement.bagContent [i]._Name);
 						} else
 								b_content = GUIContent.none;
 
@@ -66,16 +65,33 @@ public class InventoryLayout : MonoBehaviour
 				}
 
 				//Hands Content
-				//Bag Content
 				for (int i=0; i<2; i++) {
 						GUIContent b_content;
 			
 						if (playerItemManagement.handsContent [i] != null) {
-								b_content = new GUIContent (playerItemManagement.handsContent [i].Name);
+								b_content = new GUIContent (playerItemManagement.handsContent [i]._Name);
 						} else
 								b_content = GUIContent.none;
 			
 						GUI.Box (new Rect ((Screen.width - BoxDimensions.x) / 2 - HorizontalDistance * (i == 0 ? 1 : -1) / 2, (Screen.height - BoxDimensions.y) / 2, BoxDimensions.x, BoxDimensions.y), b_content);
 				}
+		}
+
+		//Update is called once per frame
+		void Update ()
+		{
+				//Equips items in hands
+				if (Input.GetButtonDown ("InventoryLeft")) {
+						playerItemManagement.PlaceInHand (selectedIndex, 0);
+				}
+		
+				if (Input.GetButtonDown ("InventoryRight")) {
+						playerItemManagement.PlaceInHand (selectedIndex, 1);
+				}
+		}
+
+		public IPickable RetrieveSelectedPickable ()
+		{
+				return playerItemManagement.RetrievePickable (selectedIndex);
 		}
 }

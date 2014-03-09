@@ -3,18 +3,22 @@ using System.Collections;
 
 public interface IPickable
 {
-		int Size {
+		int _Size {
 				get;
 				set;
 		}
 
-		string Name {
+		string _Name {
+				get;
+		}
+
+		Texture2D _Picture {
 				get;
 				set;
 		}
 
-		Texture2D Picture {
-				get;
-				set;
-		}
+		void _BeStored ();
+		void _BeRetrieved ();
+		void _Place (Transform a_parent, Vector3 a_coordinates, bool a_beKinematic = false);
+	
 }

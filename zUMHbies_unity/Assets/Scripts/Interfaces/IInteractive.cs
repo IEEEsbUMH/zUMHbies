@@ -3,5 +3,5 @@ using System.Collections;
 
 public interface IInteractive
 {
-		void Activate ();
+		void _Activate ();
 }

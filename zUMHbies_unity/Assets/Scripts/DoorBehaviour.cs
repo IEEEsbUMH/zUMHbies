@@ -32,7 +32,7 @@ public class DoorBehaviour : MonoBehaviour, IInteractive
 				}
 		}
 
-		public void Activate ()
+		public void _Activate ()
 		{
 				if (!Locked) {
 						Open = !Open;
