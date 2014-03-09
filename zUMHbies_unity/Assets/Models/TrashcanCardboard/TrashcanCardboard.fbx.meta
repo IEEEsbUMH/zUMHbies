@@ -7,13 +7,20 @@ ModelImporter:
     100002: Lamp
     100004: Plane
     100006: //RootNode
+    100008: Cube
     400000: Camera
     400002: Lamp
     400004: Plane
     400006: //RootNode
+    400008: Cube
     2300000: Plane
+    2300002: Cube
     3300000: Plane
+    3300002: Cube
     4300000: Plane
+    4300002: Cube
+    6400000: Plane
+    6400002: Cube
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -36,7 +43,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .100000001
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
