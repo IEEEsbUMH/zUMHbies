@@ -10,7 +10,7 @@ public class Chairs4Behaviour : MonoBehaviour, IInteractive
 	
 		}
 
-		public void Activate ()
+		public void _Activate ()
 		{
 				Break ();
 		}

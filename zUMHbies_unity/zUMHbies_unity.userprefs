@@ -1,10 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ContainedPhysicsBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Interact.cs">
     <Files>
-      <File FileName="Assets/Scripts/Interfaces/IBreakable.cs" Line="13" Column="14" />
-      <File FileName="Assets/Scripts/Chairs4Behaviour.cs" Line="15" Column="14" />
-      <File FileName="Assets/Scripts/ContainedPhysicsBehaviour.cs" Line="15" Column="95" />
+      <File FileName="Assets/Scripts/Player/Interact.cs" Line="51" Column="39" />
+      <File FileName="Assets/Scripts/GUIs/InventoryLayout.cs" Line="68" Column="20" />
+      <File FileName="Assets/Scripts/Player/ItemManagement.cs" Line="41" Column="31" />
+      <File FileName="Assets/Scripts/Interfaces/IPickable.cs" Line="8" Column="9" />
+      <File FileName="Assets/Scripts/Weapons/BatBehaviour.cs" Line="15" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
