@@ -6,6 +6,7 @@ public class BatBehaviour : MonoBehaviour, IInteractive, IPickable
 		public int Size;
 		public string Name;
 		public Texture2D Picture;
+		private bool inUsage;
 
 		//Interface members
 		public int _Size {
@@ -15,6 +16,14 @@ public class BatBehaviour : MonoBehaviour, IInteractive, IPickable
 				set {
 						Size = value;
 				}
+		}
+		public bool _inUsage {
+			get {
+				return inUsage;
+			}
+			set {
+				inUsage = value;
+			}
 		}
 		public string _Name {
 				get {
@@ -33,20 +42,12 @@ public class BatBehaviour : MonoBehaviour, IInteractive, IPickable
 		// Use this for initialization
 		void Start ()
 		{
+			inUsage = false;
 	
 		}
-	
-		// Update is called once per frame
-		void Update ()
-		{
-				
+		public void _Activate (){
+		print (name + " is activated");
 		}
-
-		public void _Activate ()
-		{
-				print ("I am active");
-		}
-
 		public void _BeStored ()
 		{
 				gameObject.SetActive (false);

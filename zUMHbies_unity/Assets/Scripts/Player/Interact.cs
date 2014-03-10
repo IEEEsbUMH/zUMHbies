@@ -66,13 +66,15 @@ public class Interact : MonoBehaviour
 
 		void pickUp ()
 		{
-				IPickable t_pickable = activeInteractiveObject as IPickable;
-				if (t_pickable != null) {
-						if (myItemManagement.StorePickable (t_pickable)) {
-								//Success
-						} else {
-								//Fail
-						}
+			IPickable t_pickable = activeInteractiveObject as IPickable;
+			if (t_pickable != null && activeGameObject.activeInHierarchy) {
+					while(t_pickable._inUsage != true){ //preventive
+						t_pickable._inUsage=true; 
+						if (!myItemManagement.StorePickable (t_pickable)) {
+							t_pickable._inUsage = false; 	//if it fails
+						} 
+					}
+				t_pickable._inUsage = false; // Back to primary state
 				}
 		}
 
