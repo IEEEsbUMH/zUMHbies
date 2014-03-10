@@ -33,11 +33,19 @@ public class Interact : MonoBehaviour
 						if (activeGameObject == null || (activeGameObject != null && rayHit.collider.gameObject != activeGameObject)) { //Old IInteractive is no longer active, thus we run the recognition code again
 								MonoBehaviour[] ScriptComponents = rayHit.collider.gameObject.GetComponents<MonoBehaviour> ();
 					
+								if (ScriptComponents.Length == 0) {
+										activeGameObject = null;
+										activeInteractiveObject = null;
+								}
+
 								foreach (MonoBehaviour b_behaviour in ScriptComponents) {
 										activeInteractiveObject = b_behaviour as IInteractive;
 										if (activeInteractiveObject != null) {
 												activeGameObject = b_behaviour.gameObject;
-												break;
+												break; //We prevent to overwrite the references once we've found a proper gameObject containing an IInteractive
+										} else {
+												//Nothing found. Make sure the active gameObject is set to null, since the one detected by the raycast does not contain an IInteractive
+												activeGameObject = null;
 										}
 								}
 						}

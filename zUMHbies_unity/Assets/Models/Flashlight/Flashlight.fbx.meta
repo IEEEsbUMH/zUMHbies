@@ -1,40 +1,13 @@
 fileFormatVersion: 2
-guid: 8be3d34f69ccc49f1bf45c0264bac8d8
+guid: ff5985278a9114fad8c6da3a9980cf68
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: HandleBack
-    100004: HandleHolder
-    100006: HandleMain
-    100008: MainDoor
-    100010: Marco
-    100012: SecDoor
     400000: //RootNode
-    400002: HandleBack
-    400004: HandleHolder
-    400006: HandleMain
-    400008: MainDoor
-    400010: Marco
-    400012: SecDoor
-    2300000: HandleBack
-    2300002: HandleHolder
-    2300004: HandleMain
-    2300006: MainDoor
-    2300008: Marco
-    2300010: SecDoor
-    3300000: HandleBack
-    3300002: HandleHolder
-    3300004: HandleMain
-    3300006: MainDoor
-    3300008: Marco
-    3300010: SecDoor
-    4300000: SecDoor
-    4300002: Marco
-    4300004: MainDoor
-    4300006: HandleHolder
-    4300008: HandleMain
-    4300010: HandleBack
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Object
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -55,7 +28,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2.5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
