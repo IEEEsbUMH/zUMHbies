@@ -70,14 +70,15 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 		public void _Place (Transform a_parent, Vector3 a_coordinates, bool a_beKinematic = false)
 		{
 				transform.parent = a_parent;
+		
 				transform.localPosition = a_coordinates;
 				rigidbody.isKinematic = a_beKinematic;
 
 				//No parent, so the pickable is dropped
 				if (a_parent == null) {
-						transform.localRotation = _DropRotation;
+						transform.localEulerAngles = DropRotation;
 				} else {//Parented, so the pickable is equipped
-						transform.localRotation = _EquipRotation;
-				}
+						transform.localEulerAngles = EquipRotation;
+				}	
 		}
 }

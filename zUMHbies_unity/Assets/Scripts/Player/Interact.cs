@@ -22,6 +22,18 @@ public class Interact : MonoBehaviour
 				myInventoryLayout = GameObject.FindWithTag (Tags.GAME_CONTROLLER).GetComponent<InventoryLayout> ();
 		}
 
+		void Update ()
+		{
+				if (Input.GetButtonDown ("Interact"))
+						activate ();
+		
+				if (Input.GetButtonDown ("PickUp") && myInventoryLayout.DisplayingInventory == false)
+						pickUp ();
+		
+				if (Input.GetButtonDown ("PickUp") && myInventoryLayout.DisplayingInventory == true)
+						drop ();
+		}
+
 		void FixedUpdate ()
 		{
 				if (!Interacts)
@@ -49,20 +61,12 @@ public class Interact : MonoBehaviour
 										}
 								}
 						}
-							
 				} else {
 						activeGameObject = null;
 						activeInteractiveObject = null;
 				}
 
-				if (Input.GetButtonDown ("Interact"))
-						activate ();
-
-				if (Input.GetButtonDown ("PickUp") && myInventoryLayout.DisplayingInventory == false)
-						pickUp ();
-
-				if (Input.GetButtonDown ("PickUp") && myInventoryLayout.DisplayingInventory == true)
-						drop ();
+				
 		}
 
 		void activate ()
@@ -79,7 +83,7 @@ public class Interact : MonoBehaviour
 						if (myItemManagement.StorePickable (t_pickable)) {
 								//Success
 						} else {
-								//Fail
+								//Fail to store
 						}
 				}
 		}

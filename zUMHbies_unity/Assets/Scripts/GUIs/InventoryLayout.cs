@@ -23,22 +23,6 @@ public class InventoryLayout : MonoBehaviour
 				selectedIndex = 0;
 		}
 
-		void FixedUpdate ()
-		{
-				if (Input.GetButtonDown ("Inventory")) {
-						DisplayingInventory = !DisplayingInventory;
-				}
-
-				if (DisplayingInventory) {
-						if (Input.GetButtonDown ("InventoryUp")) {
-								selectedIndex -= 1;
-						}
-						if (Input.GetButtonDown ("InventoryDown")) {
-								selectedIndex += 1;
-						}
-				}
-		}
-
 		void OnGUI ()
 		{
 				//Returns if not displaying inventory
@@ -80,6 +64,18 @@ public class InventoryLayout : MonoBehaviour
 		//Update is called once per frame
 		void Update ()
 		{
+				if (Input.GetButtonDown ("Inventory")) {
+						DisplayingInventory = !DisplayingInventory;
+				}
+		
+				if (DisplayingInventory) {
+						if (Input.GetButtonDown ("InventoryUp")) {
+								selectedIndex -= 1;
+						}
+						if (Input.GetButtonDown ("InventoryDown")) {
+								selectedIndex += 1;
+						}
+				}
 				//Equips items in hands
 				if (Input.GetButtonDown ("InventoryLeft")) {
 						playerItemManagement.PlaceInHand (selectedIndex, 0);
