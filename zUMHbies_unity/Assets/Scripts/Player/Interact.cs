@@ -13,7 +13,7 @@ public class Interact : MonoBehaviour
 
 		private Ray myRay;
 		private RaycastHit rayHit;
-		private GameObject activeGameObject; //reference to the Gameobject containing the IInteractive, used for performance reasons
+		private GameObject lastExaminedGameobject; //reference to the last Gameobject hit and examined for an IInteractive 
 		private IInteractive activeInteractiveObject;
 
 		void Start ()
@@ -41,34 +41,53 @@ public class Interact : MonoBehaviour
 
 				myRay = new Ray (POV.position, POV.forward);
 				if (Physics.Raycast (myRay, out rayHit, RayDistance)) {
+						//print (rayHit.collider.gameObject != lastExaminedGameobject);
+						if (lastExaminedGameobject == null || (lastExaminedGameobject != null && rayHit.collider.gameObject != lastExaminedGameobject)) { //Old IInteractive is no longer active, thus we run the recognition code again
 
-						if (activeGameObject == null || (activeGameObject != null && rayHit.collider.gameObject != activeGameObject)) { //Old IInteractive is no longer active, thus we run the recognition code again
-								MonoBehaviour[] ScriptComponents = rayHit.collider.gameObject.GetComponents<MonoBehaviour> ();
-					
-								if (ScriptComponents.Length == 0) {
-										activeGameObject = null;
-										activeInteractiveObject = null;
-								}
+								cleanReferences (); //First we clear the refernces
 
-								foreach (MonoBehaviour b_behaviour in ScriptComponents) {
-										activeInteractiveObject = b_behaviour as IInteractive;
-										if (activeInteractiveObject != null) {
-												activeGameObject = b_behaviour.gameObject;
-												break; //We prevent to overwrite the references once we've found a proper gameObject containing an IInteractive
-										} else {
-												//Nothing found. Make sure the active gameObject is set to null, since the one detected by the raycast does not contain an IInteractive
-												activeGameObject = null;
+								lastExaminedGameobject = rayHit.collider.gameObject;
+								GameObject t_candidateGO = lastExaminedGameobject; //Start candidates by the
+
+								bool t_stopRunning = false;
+								do {
+										MonoBehaviour[] t_scriptComponents = t_candidateGO.GetComponents<MonoBehaviour> ();
+
+
+										if (t_scriptComponents.Length == 0) {
+												//No scripts attached to the GO, jump up in hierarchy or exit the loop
+												if (t_candidateGO.transform.parent != null)
+														t_candidateGO = t_candidateGO.transform.parent.gameObject;
+												else
+														t_stopRunning = true;
+						
+						
 										}
-								}
-						}
+					
+										foreach (MonoBehaviour b_behaviour in t_scriptComponents) {
+												activeInteractiveObject = b_behaviour as IInteractive;
+												if (activeInteractiveObject != null) {
+														//activeGameObject = b_behaviour.gameObject;
+														//print (activeGameObject);
+														t_stopRunning = true; //Found object. Will stop loop.
+														activeInteractiveObject._SetAsActiveIInteractive (true); //We inform the gameobject it's been spotted
+														break; //We prevent to overwrite the reference activeInteractiveObject once we've found a proper gameObject containing an IInteractive
+												} else {
+														//Nothing found. Set new candidate as its parent to run the recognition code again as long as there is a parent
+														if (t_candidateGO.transform.parent != null)
+																t_candidateGO = t_candidateGO.transform.parent.gameObject;
+														else
+																t_stopRunning = true;
+												}
+										}
+								} while(!t_stopRunning) ;//Run until told the opposite
+			
+						} 
 				} else {
-						activeGameObject = null;
-						activeInteractiveObject = null;
+						cleanReferences ();
 				}
-
-				
 		}
-
+	
 		void activate ()
 		{
 				if (activeInteractiveObject != null) {
@@ -93,6 +112,16 @@ public class Interact : MonoBehaviour
 				IPickable t_pickable = myInventoryLayout.RetrieveSelectedPickable ();
 				if (t_pickable != null) {		
 						t_pickable._Place (null, getDropPoint ());
+				}
+		}
+
+		void cleanReferences ()
+		{
+				lastExaminedGameobject = null;
+
+				if (activeInteractiveObject != null) {
+						activeInteractiveObject._SetAsActiveIInteractive (false); //Cancel the spotted state
+						activeInteractiveObject = null;
 				}
 		}
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8be3d34f69ccc49f1bf45c0264bac8d8
+guid: 396530cf70d8140ce90de851c4e56283
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -73,7 +73,7 @@ ModelImporter:
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
@@ -87,6 +87,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 

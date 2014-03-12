@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 680c3f2c1904141bd8b49095bc7f1edd
+guid: cfc5cd23328f1451fa7ba1e92bd6fb5a
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -25,10 +25,6 @@ ModelImporter:
     4300002: Bar2
     4300004: Bar1
     4300006: Walls
-    6400000: Bar1
-    6400002: Bar2
-    6400004: Bar3
-    6400006: Walls
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -51,7 +47,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -67,7 +63,7 @@ ModelImporter:
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []
@@ -81,6 +77,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 

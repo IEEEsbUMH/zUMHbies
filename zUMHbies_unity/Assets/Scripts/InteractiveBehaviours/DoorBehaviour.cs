@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorBehaviour : MonoBehaviour, IInteractive
+public class DoorBehaviour : GeneralInteractiveBehaviour
 {
 		public bool Open;
 		public bool Locked;
@@ -11,8 +11,10 @@ public class DoorBehaviour : MonoBehaviour, IInteractive
 		private float defaultJointVelocity;
 
 		// Use this for initialization
-		void Start ()
+		public override void Start ()
 		{
+				base.Start ();
+
 				myJoint = GetComponent<HingeJoint> ();
 				defaultJointVelocity = myJoint.motor.targetVelocity;
 				motor = myJoint.motor;
@@ -32,7 +34,7 @@ public class DoorBehaviour : MonoBehaviour, IInteractive
 				}
 		}
 
-		public void _Activate ()
+		public override void _Activate ()
 		{
 				if (!Locked) {
 						Open = !Open;

@@ -1,15 +1,15 @@
 ﻿public interface IBreakable
 {
-		int MaxIntegrity {
+		int _MaxIntegrity {
 				get;
 				set;
 		}
 
-		float integrity {
+		float _Integrity {
 				get;
 				set;
 		}
 
-		void Break ();
-		void TakeDamage (float a_damage);
+		void _Break ();
+		void _TakeDamage (float a_damage);
 }

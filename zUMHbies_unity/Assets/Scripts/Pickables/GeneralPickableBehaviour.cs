@@ -2,16 +2,21 @@
 using System.Collections;
 
 public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
-{
+{		
 		//Members
 		public int Size;
 		public string Name;
 		public Texture2D Picture;
 
+		public Material OutlinedMaterial;
+		public int OutlinedMaterialIndex;
+		public Renderer RendererTarget;
+		private Material originalMaterial;
+
 		public Vector3 DropRotation; //Rotation in euler angles, will be converted to quaternion when asked for _DropRotation
 		public Vector3 EquipRotation; //Same
 
-		//IPickable member
+		//IPickable members
 		public int _Size {
 				get {
 						return Size;
@@ -51,9 +56,53 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				}
 		}
 
+		//IInteractive members
+		public Material _OutlinedMaterial {
+				get {
+						return OutlinedMaterial;
+				}
+		}
+		public int _OutlinedMaterialIndex {
+				get {
+						return OutlinedMaterialIndex;
+				}
+		}
+
+		public Renderer _RendererTarget {
+				get {
+						if (RendererTarget != null)
+								return RendererTarget;
+						else if (renderer != null)
+								return renderer;
+						else {
+								print ("Warning: " + name + " does not have any renderer to be returned!");
+								return null;
+						}
+				}
+		}
+
+		public virtual void Start ()
+		{
+				originalMaterial = _RendererTarget.materials [OutlinedMaterialIndex];
+		}
+
 		public virtual void _Activate ()
 		{
 				print (Name + " has been activated");
+		}
+
+		public virtual void _SetAsActiveIInteractive (bool a_active)
+		{
+				if (_RendererTarget == null)
+						return;
+
+				Material[] t_newMaterialsArray = _RendererTarget.materials;
+				if (a_active) {
+						t_newMaterialsArray [OutlinedMaterialIndex] = OutlinedMaterial;
+				} else 
+						t_newMaterialsArray [OutlinedMaterialIndex] = originalMaterial;
+		
+				_RendererTarget.materials = t_newMaterialsArray;
 		}
 
 		public virtual void _BeStored ()
