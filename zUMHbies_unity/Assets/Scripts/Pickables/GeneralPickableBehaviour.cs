@@ -129,9 +129,9 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 		
 				transform.localPosition = a_coordinates;
 				rigidbody.isKinematic = a_beKinematic;
-				collider.isTrigger = !a_beKinematic;
+				collider.isTrigger = a_beKinematic;
 
-				//Repeat code to avoid weird bug
+				//Repeat code to avoid weird Unity bug
 				//No parent, so the pickable is dropped
 				if (a_parent == null) {
 						transform.localEulerAngles = DropRotation;

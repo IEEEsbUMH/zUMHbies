@@ -1,30 +1,13 @@
 fileFormatVersion: 2
-guid: cbc44598d7f1845188a7065277759108
+guid: e2260f45e02d54e8e8856e2704ae55b2
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Ceiling
-    100004: Floor
-    100006: Inside
-    100008: Outside
     400000: //RootNode
-    400002: Ceiling
-    400004: Floor
-    400006: Inside
-    400008: Outside
-    2300000: Ceiling
-    2300002: Floor
-    2300004: Inside
-    2300006: Outside
-    3300000: Ceiling
-    3300002: Floor
-    3300004: Inside
-    3300006: Outside
-    4300000: Floor
-    4300002: Ceiling
-    4300004: Inside
-    4300006: Outside
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder
     7400000: Default Take
     9500000: //RootNode
   materials:

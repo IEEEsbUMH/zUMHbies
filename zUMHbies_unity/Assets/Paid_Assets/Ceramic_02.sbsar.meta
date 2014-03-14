@@ -42,14 +42,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Dirt
       value:
-        scalar[0]: .0500000007
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Swipe_Stains
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
