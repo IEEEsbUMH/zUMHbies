@@ -22,11 +22,13 @@ public class GeneralInteractiveBehaviour : MonoBehaviour, IInteractive
 
 		public Renderer _RendererTarget {
 				get {
+						//print (gameObject);
 						if (RendererTarget != null)
 								return RendererTarget;
-						else if (renderer != null)
+						else if (renderer != null) {
+								
 								return renderer;
-						else {
+						} else {
 								print ("Warning: " + name + " does not have any renderer to be returned!");
 								return null;
 						}
@@ -46,6 +48,7 @@ public class GeneralInteractiveBehaviour : MonoBehaviour, IInteractive
 
 		public virtual void _SetAsActiveIInteractive (bool a_active)
 		{
+				//print (this);
 				if (_RendererTarget == null)
 						return;
 

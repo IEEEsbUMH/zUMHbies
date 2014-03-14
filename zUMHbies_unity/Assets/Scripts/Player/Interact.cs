@@ -119,10 +119,11 @@ public class Interact : MonoBehaviour
 		{
 				lastExaminedGameobject = null;
 
-				if (activeInteractiveObject != null) {
+				//We check if both the reference and the object are not null
+				if (activeInteractiveObject != null && ((Object)activeInteractiveObject).Ext_Exists ()) {
 						activeInteractiveObject._SetAsActiveIInteractive (false); //Cancel the spotted state
-						activeInteractiveObject = null;
 				}
+				activeInteractiveObject = null; //Set the reference to null
 		}
 
 		Vector3 getDropPoint ()

@@ -20,5 +20,10 @@ public static class ExtensionMethods
 				//Called in case there are some remaining objects inside the hierarchy
 				a_gameObject.transform.DetachChildren ();
 				Object.Destroy (a_gameObject);
-		}	
+		}
+
+		public static bool Ext_Exists (this Object a_object)
+		{
+				return (a_object != null);
+		}
 }
