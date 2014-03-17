@@ -13,8 +13,12 @@ public class BlinkingLightBehaviour : MonoBehaviour
 
 		public float OnTime;
 		public float OffTime;
-		public float BlinkingTime;
+		public float BlinkingTime; //Approximate if BlinkRandomVariant>0
 		public float BlinkFrequency;
+
+		[Range(0f,0.5f)]
+		public float
+				BlinkRandomVariant;
 		public float BlinkingIntensityFactor;
 
 		public bool AutoStart;
@@ -68,7 +72,7 @@ public class BlinkingLightBehaviour : MonoBehaviour
 						LightToBlink.intensity = originalIntensity * BlinkingIntensityFactor;
 						while (i++<=t_totalBlinks) {
 								switchLight (!LightToBlink.enabled);
-								yield return new WaitForSeconds (t_timePerBlink);
+								yield return new WaitForSeconds (t_timePerBlink + Random.Range (0, BlinkRandomVariant));
 						}
 
 						//Light off
