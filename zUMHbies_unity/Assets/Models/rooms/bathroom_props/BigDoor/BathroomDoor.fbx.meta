@@ -1,40 +1,35 @@
 fileFormatVersion: 2
-guid: 396530cf70d8140ce90de851c4e56283
+guid: 7938d9a9e74bb47019163307535b7773
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: HandleBack
+    100002: Handle
     100004: HandleHolder
-    100006: HandleMain
-    100008: MainDoor
-    100010: Marco
-    100012: SecDoor
+    100006: MainDoor
+    100008: Marco
+    100010: SecDoor
     400000: //RootNode
-    400002: HandleBack
+    400002: Handle
     400004: HandleHolder
-    400006: HandleMain
-    400008: MainDoor
-    400010: Marco
-    400012: SecDoor
-    2300000: HandleBack
+    400006: MainDoor
+    400008: Marco
+    400010: SecDoor
+    2300000: Handle
     2300002: HandleHolder
-    2300004: HandleMain
-    2300006: MainDoor
-    2300008: Marco
-    2300010: SecDoor
-    3300000: HandleBack
+    2300004: MainDoor
+    2300006: Marco
+    2300008: SecDoor
+    3300000: Handle
     3300002: HandleHolder
-    3300004: HandleMain
-    3300006: MainDoor
-    3300008: Marco
-    3300010: SecDoor
+    3300004: MainDoor
+    3300006: Marco
+    3300008: SecDoor
     4300000: SecDoor
     4300002: Marco
     4300004: MainDoor
     4300006: HandleHolder
-    4300008: HandleMain
-    4300010: HandleBack
+    4300008: Handle
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -87,6 +82,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 

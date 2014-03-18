@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4cff415cc95d4546a5cd58daaf17bfc
+guid: 30ba8803edcaa471cb499d39b9142ce9
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -46,10 +46,10 @@ ModelImporter:
     3300016: Puerta2FIJA
     3300018: Pushrojo
     4300000: Puerta2FIJA
-    4300002: Puerta1
-    4300004: CierrePuerta1
-    4300006: Pushrojo
-    4300008: CierrePuerta2
+    4300002: CierrePuerta2
+    4300004: Puerta1
+    4300006: CierrePuerta1
+    4300008: Pushrojo
     4300010: Cristal
     4300012: Cylinder
     4300014: Manilla

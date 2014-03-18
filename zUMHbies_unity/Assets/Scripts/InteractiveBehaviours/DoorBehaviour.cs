@@ -5,6 +5,7 @@ public class DoorBehaviour : GeneralInteractiveBehaviour
 {
 		public bool Open;
 		public bool Locked;
+		public Animator MyAnimator;
 
 		private HingeJoint myJoint;
 		private JointMotor motor;
@@ -42,8 +43,11 @@ public class DoorBehaviour : GeneralInteractiveBehaviour
 						myJoint.motor = motor;
 						myJoint.useMotor = true;
 
-						if (Open)
+						if (Open) {
 								constrain ();
+								if (MyAnimator)
+										MyAnimator.SetTrigger (HashIDs.Open);
+						}
 				}
 		}	
 

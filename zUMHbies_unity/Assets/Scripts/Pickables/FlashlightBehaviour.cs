@@ -11,6 +11,11 @@ public class FlashlightBehaviour : GeneralPickableBehaviour
 				on_off ();
 		}
 
+		public override void _BeUsed ()
+		{
+				on_off ();
+		}
+
 		private void on_off ()
 		{
 				LightComponent.enabled = !LightComponent.enabled;

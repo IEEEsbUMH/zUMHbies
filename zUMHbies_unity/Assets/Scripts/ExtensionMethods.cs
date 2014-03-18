@@ -22,6 +22,23 @@ public static class ExtensionMethods
 				Object.Destroy (a_gameObject);
 		}
 
+		//Does not work so far
+		/*public static MonoBehaviour Ext_GetBehaviourWithInterface<a_interfaceName> (this GameObject a_gameObject) where a_interfaceName : class
+		{
+				MonoBehaviour[] t_scriptComponents = a_gameObject.GetComponents<MonoBehaviour> ();
+
+				a_interfaceName t_candidate;
+				foreach (MonoBehaviour b_behaviour in t_scriptComponents) {
+						t_candidate = b_behaviour as a_interfaceName;
+						if (t_candidate != null) {
+								return t_candidate as MonoBehaviour;
+						}
+				}
+
+				//Nothing returned so far, return null
+				return null;
+		}*/
+
 		public static bool Ext_Exists (this Object a_object)
 		{
 				return (a_object != null);

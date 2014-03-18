@@ -27,5 +27,6 @@ public interface IPickable
 
 		void _BeStored ();
 		void _BeRetrieved ();
+		void _BeUsed ();
 		void _Place (Transform a_parent, Vector3 a_coordinates, bool a_beKinematic = false);
 }

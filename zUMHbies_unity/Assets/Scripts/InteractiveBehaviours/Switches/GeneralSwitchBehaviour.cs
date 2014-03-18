@@ -4,6 +4,7 @@ using System.Collections;
 public class GeneralSwitchBehaviour : GeneralInteractiveBehaviour
 {
 		public GameObject Target;
+		public Animator MyAnimator;
 		protected ISwitchable switchableBehaviour;
 
 		public override void Start ()

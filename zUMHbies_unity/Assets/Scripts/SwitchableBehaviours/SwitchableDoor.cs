@@ -22,7 +22,7 @@ public class SwitchableDoor : MonoBehaviour, ISwitchable
 		void FixedUpdate ()
 		{
 				if (myJoint.useMotor) {
-						if (Open && Mathf.Abs (transform.rotation.eulerAngles.y - 90) < 0.1)
+						if (Open && Mathf.Abs (transform.rotation.eulerAngles.y - 45) < 0.1)
 								myJoint.useMotor = false;
 						if (!Open && Mathf.Abs (transform.rotation.eulerAngles.y) < 0.1) {
 								myJoint.useMotor = false;
@@ -33,6 +33,7 @@ public class SwitchableDoor : MonoBehaviour, ISwitchable
 	
 		public void _Activate ()
 		{
+
 				Open = !Open;
 				motor.targetVelocity = defaultJointVelocity * (Open ? 1 : -1);
 				myJoint.motor = motor;

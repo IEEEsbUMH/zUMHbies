@@ -105,6 +105,11 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				_RendererTarget.materials = t_newMaterialsArray;
 		}
 
+		public virtual void _BeUsed ()
+		{
+			
+		}
+
 		public virtual void _BeStored ()
 		{
 				gameObject.SetActive (false);
