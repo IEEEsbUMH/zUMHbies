@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Pickables/FlashlightBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Pickables/Weapons/GeneralMeleeBehaviour.cs">
     <Files>
-      <File FileName="Assets/Scripts/InteractiveBehaviours/DoorBehaviour.cs" Line="49" Column="48" />
-      <File FileName="Assets/Scripts/InteractiveBehaviours/Switches/PushAndOpenBehaviour.cs" Line="9" Column="42" />
-      <File FileName="Assets/Scripts/Pickables/GeneralPickableBehaviour.cs" Line="110" Column="4" />
-      <File FileName="Assets/Scripts/Pickables/FlashlightBehaviour.cs" Line="16" Column="15" />
+      <File FileName="Assets/Scripts/Pickables/Weapons/GeneralMeleeBehaviour.cs" Line="73" Column="14" />
+      <File FileName="Assets/Scripts/Interfaces/IDamageable.cs" Line="5" Column="2" />
+      <File FileName="Assets/Scripts/Interfaces/IBreakable.cs" Line="13" Column="18" />
+      <File FileName="Assets/Scripts/Interfaces/IUsableAsMeleeWeapon.cs" Line="17" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

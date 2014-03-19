@@ -22,25 +22,50 @@ public static class ExtensionMethods
 				Object.Destroy (a_gameObject);
 		}
 
-		//Does not work so far
-		/*public static MonoBehaviour Ext_GetBehaviourWithInterface<a_interfaceName> (this GameObject a_gameObject) where a_interfaceName : class
+		
+		public static _INTERFACE_ Ext_GetBehaviourWithInterface<_INTERFACE_> (this GameObject a_gameObject) where _INTERFACE_ : class
 		{
 				MonoBehaviour[] t_scriptComponents = a_gameObject.GetComponents<MonoBehaviour> ();
 
-				a_interfaceName t_candidate;
+				_INTERFACE_ t_candidate;
 				foreach (MonoBehaviour b_behaviour in t_scriptComponents) {
-						t_candidate = b_behaviour as a_interfaceName;
+						t_candidate = b_behaviour as _INTERFACE_;
 						if (t_candidate != null) {
-								return t_candidate as MonoBehaviour;
+								return t_candidate;
 						}
 				}
 
 				//Nothing returned so far, return null
 				return null;
-		}*/
+		}
+
+		public static _INTERFACE_ Ext_GetClosestBehaviourWithInterfaceInHierarchy <_INTERFACE_> (this GameObject a_gameObject) where _INTERFACE_ : class
+		{
+				bool t_stopRunning = false;
+				do {
+						MonoBehaviour[] t_scriptComponents = a_gameObject.GetComponents<MonoBehaviour> ();
+			
+						foreach (MonoBehaviour b_behaviour in t_scriptComponents) {
+								_INTERFACE_ t_candidate = b_behaviour as _INTERFACE_;
+								if (t_candidate != null) {
+										return t_candidate; //Found target
+								}
+						}
+
+						//Nothing found. Set new candidate as its parent to run the recognition code again as long as there is a parent
+						if (a_gameObject.transform.parent != null)
+								a_gameObject = a_gameObject.transform.parent.gameObject;
+						else
+								t_stopRunning = true;
+
+				} while(!t_stopRunning) ;//Run until told the opposite
+
+				//Nothing found up to root level. Return null
+				return null;
+		}
 
 		public static bool Ext_Exists (this Object a_object)
 		{
 				return (a_object != null);
-		}
+		}	
 }

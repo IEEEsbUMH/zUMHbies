@@ -81,7 +81,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				}
 		}
 
-		public virtual void Start ()
+		protected virtual void Start ()
 		{
 				originalMaterial = _RendererTarget.materials [OutlinedMaterialIndex];
 		}
@@ -107,7 +107,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 
 		public virtual void _BeUsed ()
 		{
-			
+				//Do somthing for the player
 		}
 
 		public virtual void _BeStored ()
@@ -123,12 +123,6 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 
 		public void _Place (Transform a_parent, Vector3 a_coordinates, bool a_beKinematic = false)
 		{
-				//No parent, so the pickable is dropped
-				if (a_parent == null) {
-						transform.localEulerAngles = DropRotation;
-				} else {//Parented, so the pickable is equipped
-						transform.localEulerAngles = EquipRotation;
-				}
 
 				transform.parent = a_parent;
 		
@@ -136,12 +130,13 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				rigidbody.isKinematic = a_beKinematic;
 				collider.isTrigger = a_beKinematic;
 
-				//Repeat code to avoid weird Unity bug
 				//No parent, so the pickable is dropped
 				if (a_parent == null) {
 						transform.localEulerAngles = DropRotation;
+						collider.enabled = true; //In case the collider is still disabled;
 				} else {//Parented, so the pickable is equipped
 						transform.localEulerAngles = EquipRotation;
+						collider.enabled = false;
 				}
 
 		}

@@ -7,7 +7,7 @@ public class GeneralSwitchBehaviour : GeneralInteractiveBehaviour
 		public Animator MyAnimator;
 		protected ISwitchable switchableBehaviour;
 
-		public override void Start ()
+		protected override void Start ()
 		{
 				base.Start ();
 				MonoBehaviour[] t_behaviours = Target.GetComponents<MonoBehaviour> ();

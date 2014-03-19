@@ -47,7 +47,7 @@ public class Interact : MonoBehaviour
 								cleanReferences (); //First we clear the refernces
 
 								lastExaminedGameobject = rayHit.collider.gameObject;
-								GameObject t_candidateGO = lastExaminedGameobject; //Start candidates by the
+								GameObject t_candidateGO = lastExaminedGameobject; //Start candidates by the gameobject owning the collider
 
 								bool t_stopRunning = false;
 								do {

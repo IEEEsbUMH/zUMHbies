@@ -35,7 +35,7 @@ public class GeneralInteractiveBehaviour : MonoBehaviour, IInteractive
 				}
 		}
 
-		public virtual void Start ()
+		protected virtual void Start ()
 		{
 				if (_RendererTarget != null)
 						originalMaterial = renderer.materials [OutlinedMaterialIndex];

@@ -1,4 +1,4 @@
-﻿public interface IBreakable
+﻿public interface IBreakable: IDamageable
 {
 		int _MaxIntegrity {
 				get;
@@ -11,5 +11,4 @@
 		}
 
 		void _Break ();
-		void _TakeDamage (float a_damage);
 }

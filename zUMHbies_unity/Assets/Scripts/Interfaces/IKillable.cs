@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IKillable
+public interface IKillable: IDamageable
 {
-		int MaxHealth {
+		int _MaxHealth {
 				get;
 				set;
 		}
 
-		float health {
+		float _Health {
 				get;
 				set;
 		}
-
-		void TakeDamage (float a_damage);
-		void Die ();
+	
+		void _Die ();
 }
