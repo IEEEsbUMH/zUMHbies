@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWeapon
 {
@@ -8,7 +9,7 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 
 		protected bool DoesDamage;
 
-		protected IDamageable[] damagedLastAttack;
+		protected List<IDamageable> damagedThisAttack;
 
 		//IUsableAsMeleeWeapon members
 		public float _Sharpness {
@@ -60,13 +61,12 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 		protected override void Start ()
 		{
 				base.Start ();
-				print (DoesDamage);
 		}
 
 		void startAttack ()
 		{
 				_DoesDamage = true;
-				damagedLastAttack = new IDamageable[2];
+				damagedThisAttack = new List<IDamageable> ();
 		}
 
 		void endAttack ()
@@ -76,18 +76,12 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 
 		void OnTriggerEnter (Collider a_collider)
 		{
-
-				print (a_collider.gameObject);
-				//Look for a IDamageable
+				//Look for an IDamageable still not hit and act on it
 				IDamageable t_hitDamageable = a_collider.gameObject.Ext_GetClosestBehaviourWithInterfaceInHierarchy<IDamageable> ();
-				if (t_hitDamageable != null)
+				if (t_hitDamageable != null && !damagedThisAttack.Contains (t_hitDamageable)) {
 						t_hitDamageable._TakeDamage (_TotalDamage);
-
-
-
-				/*if (damagedLastAttack) {
-
-				}*/
+						damagedThisAttack.Add (t_hitDamageable);
+				}
 		}
 	
 }

@@ -133,9 +133,11 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				//No parent, so the pickable is dropped
 				if (a_parent == null) {
 						transform.localEulerAngles = DropRotation;
+						gameObject.layer = Layers.DEFAULT;
 						collider.enabled = true; //In case the collider is still disabled;
 				} else {//Parented, so the pickable is equipped
 						transform.localEulerAngles = EquipRotation;
+						gameObject.layer = Layers.ITEMS_IN_HANDS;
 						collider.enabled = false;
 				}
 
