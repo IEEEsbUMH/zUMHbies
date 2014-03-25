@@ -1,14 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/References/Layers.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Light/BlinkingLightBehaviour.cs">
     <Files>
       <File FileName="Assets/Scripts/Pickables/Weapons/GeneralMeleeBehaviour.cs" Line="57" Column="22" />
       <File FileName="Assets/Scripts/BreakableBehaviours/GeneralBreakableBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Pickables/GeneralPickableBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/InteractiveBehaviours/DoorBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Light/BlinkingLightBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/References/Layers.cs" Line="8" Column="39" />
+      <File FileName="Assets/Scripts/Pickables/GeneralPickableBehaviour.cs" Line="136" Column="41" />
+      <File FileName="Assets/Scripts/Player/ItemManagement.cs" Line="60" Column="114" />
+      <File FileName="Assets/Scripts/GUIs/InventoryLayout.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/Light/BlinkingLightBehaviour.cs" Line="108" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
