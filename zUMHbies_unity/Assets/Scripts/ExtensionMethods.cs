@@ -64,6 +64,18 @@ public static class ExtensionMethods
 				return null;
 		}
 
+		//Returns true if there is nothing between origin and target
+		public static bool Ext_DirectRay (this GameObject a_gameObject, Vector3 a_from, Vector3 a_to, Collider a_target)
+		{
+				RaycastHit t_hit;
+				if (Physics.Raycast (a_from, a_to - a_from, out t_hit)) {
+						if (t_hit.collider == a_target)
+								return true;
+				}
+
+				return false;
+		}
+
 		public static bool Ext_Exists (this Object a_object)
 		{
 				return (a_object != null);

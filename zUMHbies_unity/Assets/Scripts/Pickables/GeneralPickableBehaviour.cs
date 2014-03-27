@@ -13,6 +13,8 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 		public Renderer RendererTarget;
 		private Material originalMaterial;
 
+		public bool Equiped;
+
 		public Vector3 DropRotation; //Rotation in euler angles, will be converted to quaternion when asked for _DropRotation
 		public Vector3 EquipRotation; //Same
 
@@ -32,6 +34,15 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				}
 				set {
 						name = value;
+				}
+		}
+
+		public bool _Equiped {
+				get {
+						return Equiped;
+				}
+				set {
+						Equiped = value;
 				}
 		}
 
@@ -113,6 +124,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 		public virtual void _BeStored ()
 		{
 				gameObject.SetActive (false);
+				Equiped = false;
 				//transform.localRotation = Quaternion.identity;
 		}
 

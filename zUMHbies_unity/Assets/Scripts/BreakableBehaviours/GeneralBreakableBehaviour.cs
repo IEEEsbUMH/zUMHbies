@@ -26,7 +26,7 @@ public class GeneralBreakableBehaviour : MonoBehaviour, IBreakable
 				}
 		}
 
-		public void _TakeDamage (float a_damage)
+		public void _TakeDamage (float a_damage, Vector3 a_hitPoint=default(Vector3))
 		{
 				integrity -= a_damage;
 				print (integrity);

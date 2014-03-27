@@ -12,6 +12,11 @@ public interface IPickable
 				get;
 		}
 
+		bool _Equiped {
+				get;
+				set;
+		}
+
 		Texture2D _Picture {
 				get;
 				set;

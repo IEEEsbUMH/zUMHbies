@@ -58,6 +58,7 @@ public class ItemManagement : MonoBehaviour
 				//Place in hand
 				if (handsContent [a_handIndex] != null) {
 						handsContent [a_handIndex]._Place (transform, new Vector3 (a_handIndex == 0 ? -0.75f : 0.75f, 0, 1), true);
+						handsContent [a_handIndex]._Equiped = true;
 				}
 
 				//Hand is already full, exchange items
