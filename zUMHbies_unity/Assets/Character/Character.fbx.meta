@@ -1560,15 +1560,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: fingerOne_R
-      humanName: Left Thumb Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: finger_One_R
+    - boneName: finger_Five_R
       humanName: Left Thumb Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1576,15 +1568,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger__One_R
-      humanName: Left Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: fingerTwo_R
+    - boneName: fingerFour_R
       humanName: Left Index Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1592,7 +1576,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger_Two_R
+    - boneName: finger_Four_R
       humanName: Left Index Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1600,7 +1584,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger__Two_R
+    - boneName: finger__Four_R
       humanName: Left Index Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1632,7 +1616,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: fingerFour_R
+    - boneName: fingerTwo_R
       humanName: Left Ring Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1640,7 +1624,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger_Four_R
+    - boneName: finger_Two_R
       humanName: Left Ring Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1648,7 +1632,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger__Four_R
+    - boneName: finger__Two_R
       humanName: Left Ring Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1656,7 +1640,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: fingerFive_R
+    - boneName: fingerOne_R
       humanName: Left Little Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1664,7 +1648,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger_Five_R
+    - boneName: finger_One_R
       humanName: Left Little Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1672,7 +1656,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: fingerOne_L
+    - boneName: fingerFive_L
       humanName: Right Thumb Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1680,16 +1664,8 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger_One_L
+    - boneName: finger_Five_L
       humanName: Right Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: finger__One_L
-      humanName: Right Thumb Distal
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -1768,7 +1744,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: fingerFive_L
+    - boneName: fingerOne_L
       humanName: Right Little Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1776,7 +1752,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger_Five_L
+    - boneName: finger_One_L
       humanName: Right Little Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1826,6 +1802,30 @@ ModelImporter:
         modified: 0
     - boneName: foot_L
       humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger__One_R
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger__One_L
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: fingerFive_R
+      humanName: Left Thumb Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -1930,12 +1930,12 @@ ModelImporter:
       transformModified: 1
     - name: hand_L
       position: {x: -.030612167, y: 4.37721592e-09, z: 1.93715088e-09}
-      rotation: {x: -.21685271, y: .0771362185, z: .0195515174, w: -.972955644}
+      rotation: {x: .217338488, y: .00717741111, z: -.000809685036, w: .97606957}
       scale: {x: .999999881, y: 1.00000024, z: .999999881}
       transformModified: 1
     - name: fingerFive_L
       position: {x: -.00878086593, y: .00448804209, z: -.000887797854}
-      rotation: {x: .990630865, y: -.0235697031, z: -.0512793697, w: -.124360584}
+      rotation: {x: .957268476, y: -.282450855, z: .0561453998, w: -.0265755169}
       scale: {x: 1, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: finger_Five_L
@@ -1945,7 +1945,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerFour_L
       position: {x: -.0101880496, y: .00146084442, z: .000203224321}
-      rotation: {x: -.994639695, y: -.000351879164, z: .0659833401, w: -.0796118751}
+      rotation: {x: .960932672, y: -.0335558653, z: .0334731452, w: .272694051}
       scale: {x: 1.00000036, y: 1, z: 1}
       transformModified: 1
     - name: finger_Four_L
@@ -1960,12 +1960,12 @@ ModelImporter:
       transformModified: 1
     - name: fingerOne_L
       position: {x: -.00954412948, y: -.00438964367, z: -.000113601302}
-      rotation: {x: .24004288, y: -.0882877409, z: -.266485482, w: .929284811}
+      rotation: {x: .220924437, y: -.075497143, z: .0481363684, w: .971172214}
       scale: {x: .999999821, y: .999999881, z: .99999994}
       transformModified: 1
     - name: finger_One_L
       position: {x: -.00336628105, y: 0, z: -1.7881393e-09}
-      rotation: {x: -.0884044468, y: .0401464701, z: -.00197073212, w: .995273411}
+      rotation: {x: -.0884044468, y: .0401447974, z: -.00197121943, w: .995273411}
       scale: {x: .99999994, y: 1, z: .99999994}
       transformModified: 1
     - name: finger__One_L
@@ -1975,7 +1975,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerThree_L
       position: {x: -.0092903655, y: -.000806135416, z: -5.10636855e-05}
-      rotation: {x: .271390349, y: -.0597712211, z: -.027887674, w: -.960206687}
+      rotation: {x: .542962551, y: -.020910399, z: .0209190417, w: .839235842}
       scale: {x: 1.00000012, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: finger_Three_L
@@ -1990,7 +1990,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerTwo_L
       position: {x: -.0098020602, y: -.00250113127, z: 6.61617742e-05}
-      rotation: {x: -.20008038, y: -.065690428, z: .00248622266, w: -.977571785}
+      rotation: {x: .31770125, y: -.0288275294, z: .0288753491, w: .947312593}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: finger_Two_L
@@ -2020,12 +2020,12 @@ ModelImporter:
       transformModified: 1
     - name: hand_R
       position: {x: -.03114249, y: 2.57510679e-09, z: 3.33238853e-10}
-      rotation: {x: .000114233742, y: -.0538545325, z: .00227654655, w: .998546243}
+      rotation: {x: .000254359329, y: .00671297126, z: .00231195218, w: .999974787}
       scale: {x: .999999881, y: .999999881, z: 1}
       transformModified: 1
     - name: fingerFive_R
       position: {x: -.00878086686, y: -.00448804116, z: -.000887800532}
-      rotation: {x: -.737086117, y: .0328250714, z: .0443523414, w: .6735425}
+      rotation: {x: .628397167, y: .224485427, z: .266978949, w: .695302546}
       scale: {x: 1, y: 1.00000012, z: 1.00000024}
       transformModified: 1
     - name: finger_Five_R
@@ -2035,7 +2035,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerFour_R
       position: {x: -.0101880599, y: -.00146084221, z: .00020321965}
-      rotation: {x: -.936184347, y: -.0248570815, z: .050039649, w: -.347040564}
+      rotation: {x: .705760658, y: -.0132185984, z: .0375343449, w: .707331896}
       scale: {x: 1.00000012, y: 1, z: 1}
       transformModified: 1
     - name: finger_Four_R
@@ -2050,7 +2050,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerOne_R
       position: {x: -.00954413693, y: .00442590425, z: 1.15026733e-05}
-      rotation: {x: -.0134707363, y: -.0372490287, z: .307236642, w: .950808525}
+      rotation: {x: .707037985, y: -.0523471348, z: .0118549606, w: .705135822}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: finger_One_R
@@ -2065,7 +2065,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerThree_R
       position: {x: -.00929037482, y: .000806136639, z: .000383607228}
-      rotation: {x: -.922563195, y: -.0109983776, z: .0562564991, w: -.381564409}
+      rotation: {x: .706944525, y: -.0248337071, z: .0160667058, w: .706650257}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: finger_Three_R
@@ -2080,7 +2080,7 @@ ModelImporter:
       transformModified: 1
     - name: fingerTwo_R
       position: {x: -.00980206858, y: .00250113313, z: .000374375697}
-      rotation: {x: -.515479803, y: -.0428747088, z: .0393153317, w: -.854924977}
+      rotation: {x: .707104266, y: -.0386845879, z: .0129737156, w: .705931127}
       scale: {x: .999999881, y: .999999821, z: .99999994}
       transformModified: 1
     - name: finger_Two_R
