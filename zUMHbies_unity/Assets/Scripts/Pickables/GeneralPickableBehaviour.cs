@@ -15,8 +15,11 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 
 		public bool Equiped;
 
+		public Vector3 EquipPosition;
 		public Vector3 DropRotation; //Rotation in euler angles, will be converted to quaternion when asked for _DropRotation
 		public Vector3 EquipRotation; //Same
+
+		protected int animID;
 
 		//IPickable members
 		public int _Size {
@@ -25,6 +28,12 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				}
 				set {
 						Size = value;
+				}
+		}
+
+		public int _AnimID {
+				get {
+						return animID;
 				}
 		}
 
@@ -52,6 +61,12 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				}
 				set {
 						Picture = value;
+				}
+		}
+
+		public Vector3 _EquipPosition {
+				get {
+						return EquipPosition;
 				}
 		}
 
@@ -150,7 +165,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				} else {//Parented, so the pickable is equipped
 						transform.localEulerAngles = EquipRotation;
 						gameObject.layer = Layers.ITEMS_IN_HANDS;
-						collider.enabled = false;
+						collider.enabled = false; //No need to be active in general
 				}
 
 		}

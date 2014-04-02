@@ -8,6 +8,10 @@ public interface IPickable
 				set;
 		}
 
+		int _AnimID {
+				get;
+		}
+
 		string _Name {
 				get;
 		}
@@ -20,6 +24,10 @@ public interface IPickable
 		Texture2D _Picture {
 				get;
 				set;
+		}
+
+		Vector3 _EquipPosition {
+				get;
 		}
 
 		Quaternion _DropRotation {

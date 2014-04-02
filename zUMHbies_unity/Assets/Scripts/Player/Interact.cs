@@ -40,7 +40,9 @@ public class Interact : MonoBehaviour
 						return;
 
 				myRay = new Ray (POV.position, POV.forward);
+				//print (POV.forward);
 				if (Physics.Raycast (myRay, out rayHit, RayDistance)) {
+						//print ("Raycast");
 						//print (rayHit.collider.gameObject != lastExaminedGameobject);
 						if (lastExaminedGameobject == null || (lastExaminedGameobject != null && rayHit.collider.gameObject != lastExaminedGameobject)) { //Old IInteractive is no longer active, thus we run the recognition code again
 
@@ -48,6 +50,8 @@ public class Interact : MonoBehaviour
 
 								lastExaminedGameobject = rayHit.collider.gameObject;
 								GameObject t_candidateGO = lastExaminedGameobject; //Start candidates by the gameobject owning the collider
+								activeInteractiveObject = t_candidateGO.Ext_GetClosestBehaviourWithInterfaceInHierarchy<IInteractive> ();
+								//print (activeInteractiveObject);
 
 								bool t_stopRunning = false;
 								do {

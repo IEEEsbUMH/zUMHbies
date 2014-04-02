@@ -3,16 +3,20 @@ using System.Collections;
 
 public class ItemManagement : MonoBehaviour
 {
-
 		public int BagSize;
 		public IPickable[] bagContent;
 		public IPickable[] handsContent; //0 for left, 1 for right
+		public Transform LeftHand;
+		public Transform RightHand;
+
+		private IAnimationManager myAnimManager;
 
 		// Use this for initialization
 		void Start ()
 		{
 				bagContent = new IPickable[BagSize];
 				handsContent = new IPickable[2];
+				myAnimManager = gameObject.Ext_GetBehaviourWithInterface<IAnimationManager> ();
 		}
 
 		//Tries to store the pickable. Returns true if success, false if fail
@@ -53,12 +57,14 @@ public class ItemManagement : MonoBehaviour
 				IPickable t_auxiliar = handsContent [a_handIndex];
 				bool t_isFull = t_auxiliar != null ? true : false;
 
-				handsContent [a_handIndex] = RetrievePickable (a_inventoryIndex);
+				IPickable t_newEquipedIPickable = RetrievePickable (a_inventoryIndex);
+				handsContent [a_handIndex] = t_newEquipedIPickable;
 
 				//Place in hand
 				if (handsContent [a_handIndex] != null) {
-						handsContent [a_handIndex]._Place (transform, new Vector3 (a_handIndex == 0 ? -0.75f : 0.75f, 0, 1), true);
-						handsContent [a_handIndex]._Equiped = true;
+						t_newEquipedIPickable._Place (a_handIndex == 0 ? LeftHand : RightHand, t_newEquipedIPickable._EquipPosition, true);
+						t_newEquipedIPickable._Equiped = true;
+						myAnimManager._Equip (a_handIndex, t_newEquipedIPickable);
 				}
 
 				//Hand is already full, exchange items

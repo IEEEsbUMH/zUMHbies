@@ -52,24 +52,23 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 	
 		public override void _BeUsed ()
 		{
-				//If not attacking currently, we start a new attack
-				if (!DoesDamage)
-						startAttack ();
+				//Animation handled
 		}
 		//END OF IUsableAsMeleeWeapon MEMBERS
 
 		protected override void Start ()
 		{
 				base.Start ();
+
 		}
 
-		void startAttack ()
+		public void StartAttack ()
 		{
 				_DoesDamage = true;
 				damagedThisAttack = new List<IDamageable> ();
 		}
 
-		void endAttack ()
+		public void EndAttack ()
 		{
 				_DoesDamage = false;
 		}

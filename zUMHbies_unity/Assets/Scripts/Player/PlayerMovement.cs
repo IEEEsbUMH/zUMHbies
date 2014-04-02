@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 		public float Speed;
 		public float MouseSpeed;
 
-		public GameObject[] FPCameras;
+		public Transform POV;
 		public float MaxCameraRotation;
 		public float MinCameraRotation;
 
@@ -74,15 +74,13 @@ public class PlayerMovement : MonoBehaviour
 
 		private void mouseMovementInputHandling ()
 		{
-				if (Input.GetAxis ("Mouse Y") > 0 ? Vector3.Angle (FPCameras [0].transform.forward, transform.up) > MaxCameraRotation : Vector3.Angle (FPCameras [0].transform.forward, transform.up) < MinCameraRotation)
+				if (Input.GetAxis ("Mouse Y") > 0 ? Vector3.Angle (POV.forward, transform.up) > MaxCameraRotation : Vector3.Angle (POV.forward, transform.up) < MinCameraRotation)
 						rotatePOV (new Vector3 (-Input.GetAxis ("Mouse Y") * MouseSpeed * Time.deltaTime, 0, 0));
 				transform.Rotate (new Vector3 (0, Input.GetAxis ("Mouse X") * MouseSpeed * Time.deltaTime, 0));
 		}
 
 		private void rotatePOV (Vector3 a_eulerAngles)
 		{
-				foreach (GameObject a_gameObject in FPCameras) {
-						a_gameObject.transform.Rotate (a_eulerAngles);
-				}
+				POV.Rotate (a_eulerAngles);
 		}
 }

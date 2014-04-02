@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BatBehaviour : GeneralPickableBehaviour
+public class BatBehaviour : GeneralMeleeBehaviour
 {
-		public override void _Activate ()
+		protected override void Start ()
 		{
-				print ("I am active");
-		}	
+				base.Start ();
+				animID = AnimIDs.BAT;
+		}
 }
