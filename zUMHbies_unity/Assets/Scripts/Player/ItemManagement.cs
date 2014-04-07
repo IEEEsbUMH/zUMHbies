@@ -61,7 +61,7 @@ public class ItemManagement : MonoBehaviour
 				handsContent [a_handIndex] = t_newEquipedIPickable;
 
 				//Place in hand
-				if (handsContent [a_handIndex] != null) {
+				if (t_newEquipedIPickable != null) {
 						t_newEquipedIPickable._Place (a_handIndex == 0 ? LeftHand : RightHand, t_newEquipedIPickable._EquipPosition, true);
 						t_newEquipedIPickable._Equiped = true;
 						myAnimManager._Equip (a_handIndex, t_newEquipedIPickable);
@@ -70,6 +70,9 @@ public class ItemManagement : MonoBehaviour
 				//Hand is already full, exchange items
 				if (t_isFull) {
 						StorePickable (t_auxiliar);
+
+						if (t_newEquipedIPickable == null) //No new object equip, run _Unequip
+								myAnimManager._Unequip (a_handIndex);
 				}
 		}
 

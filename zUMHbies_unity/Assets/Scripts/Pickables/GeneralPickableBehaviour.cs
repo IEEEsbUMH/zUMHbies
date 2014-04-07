@@ -164,6 +164,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 						collider.enabled = true; //In case the collider is still disabled;
 				} else {//Parented, so the pickable is equipped
 						transform.localEulerAngles = EquipRotation;
+						//print (transform.localRotation.eulerAngles);
 						gameObject.layer = Layers.ITEMS_IN_HANDS;
 						collider.enabled = false; //No need to be active in general
 				}

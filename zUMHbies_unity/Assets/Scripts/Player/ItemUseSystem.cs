@@ -17,7 +17,7 @@ public class ItemUseSystem : MonoBehaviour
 				if (Input.GetButtonDown ("UseLeft"))
 						usePickable (0);
 				
-				if (Input.GetButtonDown ("UseLeft"))
+				if (Input.GetButtonDown ("UseRight"))
 						usePickable (1);
 		}
 

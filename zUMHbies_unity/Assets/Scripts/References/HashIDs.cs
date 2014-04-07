@@ -4,7 +4,9 @@ using System.Collections;
 public static class HashIDs
 {
 		public static int Open = Animator.StringToHash ("Open");
-		public static int Drop_L = Animator.StringToHash ("Drop_L");
-		public static int AddBat_L = Animator.StringToHash ("AddBat_L");
-		public static int Use_L = Animator.StringToHash ("Use_L");
+		public static int Unequip = Animator.StringToHash ("Unequip");
+		public static int AddBat = Animator.StringToHash ("AddBat");
+		public static int Use = Animator.StringToHash ("Use");
+		public static int Arm_L_Action = Animator.StringToHash ("Arm_L_Action");
+		public static int Arm_R_Action = Animator.StringToHash ("Arm_R_Action");
 }
