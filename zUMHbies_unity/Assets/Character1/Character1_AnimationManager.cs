@@ -4,16 +4,18 @@ using System.Collections;
 public class Character1_AnimationManager : MonoBehaviour, IAnimationManager
 {
 		protected Animator myAnimator;
+		protected ItemManagement myItemManagement;
 
 		void Start ()
 		{
 				myAnimator = GetComponent<Animator> ();
+				myItemManagement = GetComponent<ItemManagement> ();
 		}
 
-		void FixedUpdate ()
+		/*void FixedUpdate ()
 		{
 			
-		}
+		}*/
 
 		public void _Equip (int a_handIndex, IPickable a_pickable)
 		{
@@ -63,11 +65,13 @@ public class Character1_AnimationManager : MonoBehaviour, IAnimationManager
 		//Event receivers
 		public void AE_DamageOn (int a_handIndex)
 		{
-				
+				IUsableAsMeleeWeapon t_meleeWeapon = myItemManagement.handsContent [a_handIndex] as IUsableAsMeleeWeapon;
+				t_meleeWeapon._DoesDamage = true;
 		}
 
 		public void AE_DamageOff (int a_handIndex)
 		{
-			
+				IUsableAsMeleeWeapon t_meleeWeapon = myItemManagement.handsContent [a_handIndex] as IUsableAsMeleeWeapon;
+				t_meleeWeapon._DoesDamage = false;
 		}
 }

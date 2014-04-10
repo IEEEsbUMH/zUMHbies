@@ -45,7 +45,12 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 				set {
 						DoesDamage = value;
 						//Enable or disables the collider
-						collider.enabled = value ? true : false;
+						collider.enabled = value;
+						if (value) {
+								StartAttack ();
+						} else {
+								EndAttack ();
+						}
 				}
 		}
 		
@@ -64,13 +69,13 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 
 		public void StartAttack ()
 		{
-				_DoesDamage = true;
+				//_DoesDamage = true;
 				damagedThisAttack = new List<IDamageable> ();
 		}
 
 		public void EndAttack ()
 		{
-				_DoesDamage = false;
+				//_DoesDamage = false;
 		}
 
 		void OnTriggerEnter (Collider a_collider)
@@ -80,8 +85,10 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 
 				//Look for an IDamageable still not hit and act on it
 				IDamageable t_hitDamageable = a_collider.gameObject.Ext_GetClosestBehaviourWithInterfaceInHierarchy<IDamageable> ();
+
 				if (t_hitDamageable != null && !damagedThisAttack.Contains (t_hitDamageable)) {
 						t_hitDamageable._TakeDamage (_TotalDamage, default(Vector3));
+						//print ("ouch");
 						damagedThisAttack.Add (t_hitDamageable);
 				}
 		}

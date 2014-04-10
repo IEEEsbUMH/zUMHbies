@@ -43,6 +43,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 
 		public void _TakeDamage (float a_damage, Vector3 a_hitPoint)
 		{
+				print ("ayayayay");
 				health -= a_damage;
 
 				if (health <= 0)
@@ -68,7 +69,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 		{
 				switch (a_index) {
 				case 0: //Vision trigger
-						if (a_collider == PlayerRefs.PlayerCollider)
+						if (a_collider == PlayerRefs.Player.collider)
 								checkPlayerVisibility ();
 						break;
 				}
@@ -123,7 +124,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 						return; //Yes, return
 
 				//Direct vision with player? Go chase that little bitch
-				if (gameObject.Ext_DirectRay (HeadTransform.position, PlayerRefs.Player.transform.position, PlayerRefs.PlayerCollider)) {
+				if (gameObject.Ext_DirectRay (HeadTransform.position, PlayerRefs.Player.transform.position, PlayerRefs.Player.collider)) {
 						StartCoroutine (chasePlayer ());
 				}
 		}
@@ -159,9 +160,9 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 
 				while (true) {
 						//Is the player still visible?
-						if (gameObject.Ext_DirectRay (HeadTransform.position, PlayerRefs.Player.transform.position, PlayerRefs.PlayerCollider)) {
+						if (gameObject.Ext_DirectRay (HeadTransform.position, PlayerRefs.Player.transform.position, PlayerRefs.Player.collider)) {
 								//Update target
-								myNavMeshAgent.SetDestination (PlayerRefs.Player.transform.position);
+								myNavMeshAgent.SetDestination (PlayerRefs.FeetTransform.position);
 								yield return new WaitForSeconds (SecondsBetweenRaycasts);
 						} else {
 								//Player lost, zombie will continue running towards target, but will update the target no more
