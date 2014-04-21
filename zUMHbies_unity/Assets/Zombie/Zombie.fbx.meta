@@ -1,0 +1,1940 @@
+fileFormatVersion: 2
+guid: 6ef50fb4e683dfc468d9a2b7b285b8b4
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: Body_Two
+    100004: finger__Four_L
+    100006: finger__Four_R
+    100008: finger__One_L
+    100010: finger__One_R
+    100012: finger__Three_L
+    100014: finger__Three_R
+    100016: finger__Two_L
+    100018: finger__Two_R
+    100020: finger_Five_L
+    100022: finger_Five_R
+    100024: finger_Four_L
+    100026: finger_Four_R
+    100028: finger_One_L
+    100030: finger_One_R
+    100032: finger_Three_L
+    100034: finger_Three_R
+    100036: finger_Two_L
+    100038: finger_Two_R
+    100040: fingerFive_L
+    100042: fingerFive_R
+    100044: fingerFour_L
+    100046: fingerFour_R
+    100048: fingerOne_L
+    100050: fingerOne_R
+    100052: fingerThree_L
+    100054: fingerThree_R
+    100056: fingerTwo_L
+    100058: fingerTwo_R
+    100060: foot_L
+    100062: foot_R
+    100064: forearm_L
+    100066: forearm_R
+    100068: hand_L
+    100070: hand_R
+    100072: head
+    100074: lip
+    100076: lip_upper
+    100078: neck
+    100080: pelvis_L
+    100082: pelvis_R
+    100084: Scapula_L
+    100086: Scapula_R
+    100088: shoulder_L
+    100090: shoulder_R
+    100092: thigh_L
+    100094: thigh_R
+    100096: twin_L
+    100098: twin_R
+    100100: Zombi_Prototipe_One_Armature
+    100102: //RootNode
+    100104: Zombie_Body
+    100106: Zombie_Cloth
+    100108: Zombie_Eyes
+    400000: Body
+    400002: Body_Two
+    400004: finger__Four_L
+    400006: finger__Four_R
+    400008: finger__One_L
+    400010: finger__One_R
+    400012: finger__Three_L
+    400014: finger__Three_R
+    400016: finger__Two_L
+    400018: finger__Two_R
+    400020: finger_Five_L
+    400022: finger_Five_R
+    400024: finger_Four_L
+    400026: finger_Four_R
+    400028: finger_One_L
+    400030: finger_One_R
+    400032: finger_Three_L
+    400034: finger_Three_R
+    400036: finger_Two_L
+    400038: finger_Two_R
+    400040: fingerFive_L
+    400042: fingerFive_R
+    400044: fingerFour_L
+    400046: fingerFour_R
+    400048: fingerOne_L
+    400050: fingerOne_R
+    400052: fingerThree_L
+    400054: fingerThree_R
+    400056: fingerTwo_L
+    400058: fingerTwo_R
+    400060: foot_L
+    400062: foot_R
+    400064: forearm_L
+    400066: forearm_R
+    400068: hand_L
+    400070: hand_R
+    400072: head
+    400074: lip
+    400076: lip_upper
+    400078: neck
+    400080: pelvis_L
+    400082: pelvis_R
+    400084: Scapula_L
+    400086: Scapula_R
+    400088: shoulder_L
+    400090: shoulder_R
+    400092: thigh_L
+    400094: thigh_R
+    400096: twin_L
+    400098: twin_R
+    400100: Zombi_Prototipe_One_Armature
+    400102: //RootNode
+    400104: Zombie_Body
+    400106: Zombie_Cloth
+    400108: Zombie_Eyes
+    4300000: Zombie_Body
+    4300002: Zombie_Eyes
+    4300004: Zombie_Cloth
+    7400000: Default Take
+    7400002: Damage_Down
+    7400004: Damage_Up
+    7400006: Figther_Down
+    7400008: Figther_Up
+    7400010: Pos_Start
+    7400012: State
+    7400014: Walk_Down
+    7400016: Walk_Transition
+    7400018: Walk_Up
+    9500000: //RootNode
+    13700000: Zombie_Body
+    13700002: Zombie_Cloth
+    13700004: Zombie_Eyes
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Damage_Down
+      takeName: Damage_Down
+      firstFrame: 0
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Damage_Up
+      takeName: Damage_Up
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Figther_Down
+      takeName: Figther_Down
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Figther_Up
+      takeName: Figther_Up
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Pos_Start
+      takeName: Pos_Start
+      firstFrame: .959999979
+      lastFrame: 1.05999994
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: State
+      takeName: State
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_Down
+      takeName: Walk_Down
+      firstFrame: 0
+      lastFrame: 92
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_Transition
+      takeName: Walk_Transition
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_Up
+      takeName: Walk_Up
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 0
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Body
+        weight: 0
+      - path: Zombie_Cloth
+        weight: 0
+      - path: Zombie_Eyes
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Body
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_R
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_L
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: twin_R
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: twin_L
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_L
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_Two
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scapula_R
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scapula_L
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder_R
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder_L
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: forearm_R
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: forearm_L
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_L
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: fingerOne_L
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger_One_L
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger__One_L
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: fingerTwo_L
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger_Two_L
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger__Two_L
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: fingerThree_L
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger_Three_L
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger__Three_L
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: fingerFour_L
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger_Four_L
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger__Four_L
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: fingerFive_L
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: finger_Five_L
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_R
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_R
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Zombie(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Zombi_Prototipe_One_Armature
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106888, y: 0, z: -0, w: .707106769}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Body
+      position: {x: -.00194019673, y: .0110006547, z: -.0578960888}
+      rotation: {x: .498905063, y: .501213729, z: -.50109148, w: .498784393}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Body_Two
+      position: {x: -.114903182, y: 8.94947316e-09, z: -4.76548134e-10}
+      rotation: {x: 1.76482529e-09, y: -1.37764455e-05, z: .000260600063, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: neck
+      position: {x: -.129529089, y: 9.6986783e-09, z: 1.23396882e-09}
+      rotation: {x: -.00438503083, y: .190845191, z: -.0338557139, w: .981026351}
+      scale: {x: .999999881, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: head
+      position: {x: -.0297403857, y: 2.06346162e-09, z: 2.61410604e-09}
+      rotation: {x: .00356433704, y: -.179091737, z: .0359093286, w: .98317039}
+      scale: {x: .999999881, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: lip
+      position: {x: -.018817449, y: 7.32038316e-05, z: .0306527484}
+      rotation: {x: 2.00263713e-07, y: .85543108, z: -2.24100191e-07, w: .517916679}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: lip_upper
+      position: {x: -.018817449, y: 7.32038316e-05, z: .0306527484}
+      rotation: {x: 2.0730171e-07, y: .572415173, z: -1.14547809e-07, w: .819963932}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Scapula_L
+      position: {x: -.129529163, y: 1.91309427e-05, z: 1.2278949e-09}
+      rotation: {x: .234476268, y: -.382978469, z: -.703849137, w: .550404191}
+      scale: {x: .999999821, y: 1, z: 1}
+      transformModified: 1
+    - name: shoulder_L
+      position: {x: -.0608546324, y: 1.6093253e-08, z: -5.96046434e-10}
+      rotation: {x: .328011751, y: .15001376, z: .0147658112, w: .932569683}
+      scale: {x: .999999881, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: forearm_L
+      position: {x: -.0923179537, y: 8.3446503e-09, z: 3.28384324e-08}
+      rotation: {x: -.225254178, y: -.00484696031, z: -.0125174765, w: .97420758}
+      scale: {x: .99999994, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: hand_L
+      position: {x: -.140752792, y: 5.17815346e-09, z: 1.04308127e-08}
+      rotation: {x: .217339844, y: .00633322913, z: -.000714370108, w: .976075232}
+      scale: {x: .999999821, y: 1, z: .999999762}
+      transformModified: 1
+    - name: fingerFive_L
+      position: {x: -.0356252976, y: .0182086602, z: -.00360194105}
+      rotation: {x: .979349673, y: -.1436764, z: .142097011, w: .00631110277}
+      scale: {x: .999999762, y: 1.00000012, z: .999999762}
+      transformModified: 1
+    - name: finger_Five_L
+      position: {x: -.00937754754, y: 9.16421428e-09, z: -7.87898902e-09}
+      rotation: {x: -.681266129, y: .0501231812, z: -.149161264, w: .714923084}
+      scale: {x: .999999702, y: .999999702, z: .999999762}
+      transformModified: 1
+    - name: fingerFour_L
+      position: {x: -.0413344912, y: .00592686236, z: .000824478979}
+      rotation: {x: .960932612, y: -.033555977, z: .0334732383, w: .272694021}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: finger_Four_L
+      position: {x: -.0147623764, y: 0, z: -8.94069618e-09}
+      rotation: {x: 1.26245995e-05, y: -.00510316901, z: -.00917290617, w: .999944925}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: finger__Four_L
+      position: {x: -.00947423093, y: -4.76837148e-09, z: 1.66893006e-08}
+      rotation: {x: -5.18630259e-08, y: -1.86264504e-09, z: -1.39698386e-09, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: fingerOne_L
+      position: {x: -.0387219973, y: -.0178094432, z: -.000460922252}
+      rotation: {x: .221184209, y: -.0864131078, z: .0488198698, w: .970168531}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: finger_One_L
+      position: {x: -.0136574972, y: -4.76837148e-09, z: -1.43051144e-08}
+      rotation: {x: -.088267833, y: .0684913099, z: -.00336241629, w: .993733585}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: finger__One_L
+      position: {x: -.00643568719, y: -4.76837148e-09, z: 5.96046412e-09}
+      rotation: {x: .0870301351, y: -.0895005241, z: -.00549025089, w: .99216193}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: fingerThree_L
+      position: {x: -.0376924463, y: -.00327061373, z: -.000207186604}
+      rotation: {x: .542962551, y: -.0209104158, z: .0209191758, w: .839235842}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: finger_Three_L
+      position: {x: -.021099424, y: -1.2516975e-08, z: -5.66244118e-09}
+      rotation: {x: -.187955186, y: .00591853354, z: -.00106755737, w: .982159197}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: finger__Three_L
+      position: {x: -.0123772146, y: 5.96046412e-09, z: 1.07288356e-08}
+      rotation: {x: -1.40257168e-06, y: -1.39698375e-09, z: 4.65661287e-10, w: 1}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: fingerTwo_L
+      position: {x: -.0397684425, y: -.01014747, z: .000268409931}
+      rotation: {x: .317701548, y: -.0288278572, z: .0288754236, w: .947312474}
+      scale: {x: .999999821, y: 1, z: .999999881}
+      transformModified: 1
+    - name: finger_Two_L
+      position: {x: -.0167183578, y: 1.66893006e-08, z: 1.43051144e-08}
+      rotation: {x: -1.35800947e-05, y: .00373901753, z: -.00752605917, w: .999964714}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: finger__Two_L
+      position: {x: -.010521817, y: 0, z: 1.19209287e-09}
+      rotation: {x: 1.62774813e-06, y: 1.39698386e-09, z: -9.31322575e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Scapula_R
+      position: {x: -.129529089, y: 9.6986783e-09, z: 1.23396882e-09}
+      rotation: {x: .399333, y: .593958199, z: -.541472912, w: -.441082656}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: shoulder_R
+      position: {x: -.0608546287, y: 6.92904001e-09, z: 1.27032393e-08}
+      rotation: {x: .00256460463, y: .136909768, z: .0328976326, w: .990033805}
+      scale: {x: .999999821, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: forearm_R
+      position: {x: -.0847111791, y: 5.99771743e-09, z: -2.31200818e-08}
+      rotation: {x: .000530569698, y: .00873431005, z: .0323679373, w: .999437749}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: hand_R
+      position: {x: -.111333653, y: 9.05245479e-09, z: 1.47684478e-08}
+      rotation: {x: .000731115462, y: -5.22580085e-05, z: -.0681130067, w: .997677386}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: fingerFive_R
+      position: {x: -.0233320855, y: -.0230478086, z: -.00475671142}
+      rotation: {x: .601066649, y: .195054561, z: .38554579, w: .672329545}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: finger_Five_R
+      position: {x: -.0127075622, y: -8.47503512e-10, z: -2.02655794e-08}
+      rotation: {x: .0217441488, y: -.14830099, z: -.0325339809, w: .988167763}
+      scale: {x: .999999762, y: .999999642, z: .999999881}
+      transformModified: 1
+    - name: fingerFour_R
+      position: {x: -.0455356427, y: -.0156014729, z: -.00116773217}
+      rotation: {x: .696359932, y: .0910015404, z: .186286047, w: .687094688}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: finger_Four_R
+      position: {x: -.0161569491, y: 1.51200208e-08, z: 2.27242714e-09}
+      rotation: {x: -.00460234936, y: -.0184566565, z: .00254738145, w: .999815822}
+      scale: {x: .99999994, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: finger__Four_R
+      position: {x: -.00897629373, y: -3.18046656e-09, z: -3.87430177e-09}
+      rotation: {x: .039682202, y: -.00241559325, z: .0134118879, w: .999119461}
+      scale: {x: .999999881, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: fingerOne_R
+      position: {x: -.0438832417, y: .0154401371, z: -.00121718796}
+      rotation: {x: .700163782, y: -.109761871, z: .0370534137, w: .704521239}
+      scale: {x: .999999881, y: 1, z: .999999881}
+      transformModified: 1
+    - name: finger_One_R
+      position: {x: -.011852284, y: -6.85453383e-09, z: 9.68575442e-10}
+      rotation: {x: -.00615445804, y: .0142711904, z: -.00197999575, w: .999877274}
+      scale: {x: 1.00000012, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: finger__One_R
+      position: {x: -.0067359535, y: -7.15255721e-09, z: 7.15255721e-09}
+      rotation: {x: .00333733857, y: .014533164, z: -.0195650663, w: .999697387}
+      scale: {x: .99999994, y: .999999881, z: .999999762}
+      transformModified: 1
+    - name: fingerThree_R
+      position: {x: -.0473887324, y: -.00508955587, z: .000593017961}
+      rotation: {x: .704941273, y: -.0226308908, z: .126407519, w: .697543383}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: finger_Three_R
+      position: {x: -.0191099532, y: 1.27777451e-08, z: -2.60770316e-09}
+      rotation: {x: .00610036077, y: .00341990055, z: -.0129869338, w: .999891222}
+      scale: {x: .999999881, y: 1, z: .99999994}
+      transformModified: 1
+    - name: finger__Three_R
+      position: {x: -.00897461083, y: 3.96743394e-09, z: -5.96046434e-10}
+      rotation: {x: -.00123385165, y: -.00359804346, z: .00197444553, w: .999990821}
+      scale: {x: 1.00000012, y: .99999994, z: 1.00000024}
+      transformModified: 1
+    - name: fingerTwo_R
+      position: {x: -.0482625701, y: .00475902297, z: .000331082178}
+      rotation: {x: .703973114, y: -.077209793, z: .0846623853, w: .700922847}
+      scale: {x: .999999881, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: finger_Two_R
+      position: {x: -.0139210029, y: -3.14414486e-08, z: 7.45058043e-11}
+      rotation: {x: .00203698082, y: .0298589487, z: -.0355614163, w: .998919249}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: finger__Two_R
+      position: {x: -.0102562476, y: 1.24052164e-08, z: 2.45869147e-09}
+      rotation: {x: -.0247522481, y: .00294393487, z: .0356961079, w: .999051809}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pelvis_L
+      position: {x: .00403303187, y: 3.77372926e-05, z: 9.94418315e-07}
+      rotation: {x: -.371715993, y: .60161078, z: .601521194, w: -.371569574}
+      scale: {x: .999999762, y: .99999994, z: 1}
+      transformModified: 1
+    - name: thigh_L
+      position: {x: -.0443034731, y: 2.58837529e-09, z: 2.09076179e-09}
+      rotation: {x: .629045665, y: -.405735016, z: .323582023, w: .578770518}
+      scale: {x: .999999762, y: 1, z: 1}
+      transformModified: 1
+    - name: twin_L
+      position: {x: -.147298917, y: 1.18650494e-08, z: 4.79631135e-09}
+      rotation: {x: .0021734531, y: .0977913961, z: .0224423446, w: .994951487}
+      scale: {x: .99999994, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: foot_L
+      position: {x: -.172472626, y: 1.62210192e-08, z: -1.96509053e-09}
+      rotation: {x: .708625495, y: -.00986044481, z: .705430269, w: .0109977024}
+      scale: {x: .999999821, y: .99999994, z: 1}
+      transformModified: 1
+    - name: pelvis_R
+      position: {x: .00403313478, y: 1.8616327e-05, z: 9.94430138e-07}
+      rotation: {x: .357221454, y: .610326946, z: -.610239685, w: -.357073337}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: thigh_R
+      position: {x: -.0411929749, y: 2.71337752e-09, z: 2.57706523e-09}
+      rotation: {x: -.629505575, y: -.403587967, z: -.319879264, w: .581821918}
+      scale: {x: .999999821, y: 1, z: .99999994}
+      transformModified: 1
+    - name: twin_R
+      position: {x: -.147293955, y: 1.43959182e-08, z: -1.45984813e-09}
+      rotation: {x: -.00182099524, y: .097785756, z: .00829025451, w: .995171309}
+      scale: {x: .99999994, y: .999999821, z: 1}
+      transformModified: 1
+    - name: foot_R
+      position: {x: -.172398388, y: 1.28528335e-08, z: 3.37138761e-09}
+      rotation: {x: .708711386, y: -.00176516641, z: .705496073, w: .000575070211}
+      scale: {x: .999999702, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: Zombie_Body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Zombie_Cloth
+      position: {x: 0, y: 0, z: -1.19209287e-09}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Zombie_Eyes
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
