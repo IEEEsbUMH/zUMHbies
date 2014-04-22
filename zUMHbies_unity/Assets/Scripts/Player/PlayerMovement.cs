@@ -26,9 +26,12 @@ public class PlayerMovement : MonoBehaviour
 		public float jumpRate; //this controls how many times per second you can jump
 		public float jumpHeight; //this states how much you can jump
 		private float nextJump;
+
+		private Character2_AnimationManager myAnimationManager;
 		void Start ()
 		{
 				characterController = GetComponent<CharacterController> ();
+				myAnimationManager = GetComponent<Character2_AnimationManager> ();
 				isPlayerCrouched = false;
 				speedType = velocity.walkSpeed;
 		}

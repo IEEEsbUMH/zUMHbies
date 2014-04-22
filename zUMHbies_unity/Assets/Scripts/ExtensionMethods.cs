@@ -21,7 +21,21 @@ public static class ExtensionMethods
 				a_gameObject.transform.DetachChildren ();
 				Object.Destroy (a_gameObject);
 		}
+		
+		public static T GetClosestComponentInHierarchy<T> (this GameObject a_gameObject) where T : Component
+		{
+				Transform t_currentTransform = a_gameObject.transform;
+				T r_component;
 
+				while (t_currentTransform != null) {
+						r_component = t_currentTransform.GetComponent<T> ();
+						if (r_component != null)
+								return r_component;
+						else
+								t_currentTransform = t_currentTransform.parent;
+				}
+				return default(T);
+		}
 		
 		public static _INTERFACE_ Ext_GetBehaviourWithInterface<_INTERFACE_> (this GameObject a_gameObject) where _INTERFACE_ : class
 		{
