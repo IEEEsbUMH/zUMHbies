@@ -124,14 +124,15 @@ ModelImporter:
     7400010: Dug_Interact
     7400012: Hit_hands
     7400014: Interact_Door
-    7400016: Lantern_add
-    7400018: Lantern_Hit
-    7400020: Lantern_Hit_Two
-    7400022: MoveCamera
-    7400024: Run
-    7400026: Start
-    7400028: State
-    7400030: Walk
+    7400016: Jump
+    7400018: Lantern_add
+    7400020: Lantern_Hit
+    7400022: Lantern_Hit_Two
+    7400024: MoveCamera
+    7400026: Run
+    7400028: Start
+    7400030: State
+    7400032: Walk
     9500000: //RootNode
     13700000: Human_Body
     13700002: Human_Cloth
@@ -178,11 +179,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -194,9 +195,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -314,11 +315,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -330,9 +331,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -450,11 +451,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -466,9 +467,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -586,11 +587,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -602,9 +603,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -722,11 +723,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -738,9 +739,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -858,11 +859,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -874,9 +875,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -994,11 +995,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1010,9 +1011,145 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFive_L/finger_Five_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerFour_L/finger_Four_L/finger__Four_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerOne_L/finger_One_L/finger__One_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerThree_L/finger_Three_L/finger__Three_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L/forearm_L/hand_L/fingerTwo_L/finger_Two_L/finger__Two_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFive_R/finger_Five_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerFour_R/finger_Four_R/finger__Four_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerOne_R/finger_One_R/finger__One_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerThree_R/finger_Three_R/finger__Three_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_R/shoulder_R/forearm_R/hand_R/fingerTwo_R/finger_Two_R/finger__Two_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_L/thigh_L/twin_L/foot_L
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: Jump
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human_Body
+        weight: 1
+      - path: Human_Cloth
+        weight: 1
+      - path: Human_Hair
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
+        weight: 1
+      - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1130,11 +1267,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1146,9 +1283,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1266,11 +1403,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1282,9 +1419,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1402,11 +1539,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1418,9 +1555,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1538,11 +1675,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1554,9 +1691,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1674,11 +1811,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1690,9 +1827,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1810,11 +1947,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1826,9 +1963,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1946,11 +2083,11 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Human_Body
-        weight: 0
+        weight: 1
       - path: Human_Cloth
-        weight: 0
+        weight: 1
       - path: Human_Hair
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1962,9 +2099,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
