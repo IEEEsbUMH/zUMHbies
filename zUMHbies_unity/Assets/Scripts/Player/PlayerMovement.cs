@@ -11,7 +11,8 @@ public class MovementVelocity
 public class PlayerMovement : MonoBehaviour
 {
 		public float Speed;
-		public float MouseSpeed;
+		public float MouseSpeedX;
+		public float MouseSpeedY;
 
 		public Transform POV;
 		public float MaxCameraRotation;
@@ -27,13 +28,21 @@ public class PlayerMovement : MonoBehaviour
 		public float jumpHeight; //this states how much you can jump
 		private float nextJump;
 
+		private Animator myAnimator;
 		private Character2_AnimationManager myAnimationManager;
+
 		void Start ()
 		{
 				characterController = GetComponent<CharacterController> ();
+				myAnimator = GetComponent<Animator> ();
 				myAnimationManager = GetComponent<Character2_AnimationManager> ();
 				isPlayerCrouched = false;
 				speedType = velocity.walkSpeed;
+		}
+
+		void Update ()
+		{
+				runInputHandling ();
 		}
 
 		void FixedUpdate ()
@@ -43,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 				translationInputHandling ();
 				mouseMovementInputHandling ();
 				crouchInputHandling ();
-				runInputHandling ();
+				
 				characterController.Move (translationMotion * Time.deltaTime);
 		}	
 
@@ -51,6 +60,12 @@ public class PlayerMovement : MonoBehaviour
 		{
 				translationMotion.x = speedType * Speed * (Input.GetAxis ("Horizontal") * Mathf.Cos (Mathf.Deg2Rad * (Vector3.Angle (Vector3.right, transform.right))) + Input.GetAxis ("Vertical") * Mathf.Cos (Mathf.Deg2Rad * (Vector3.Angle (Vector3.right, transform.forward))));
 				translationMotion.z = speedType * Speed * (Input.GetAxis ("Horizontal") * Mathf.Cos (Mathf.Deg2Rad * (Vector3.Angle (Vector3.forward, transform.right))) + Input.GetAxis ("Vertical") * Mathf.Cos (Mathf.Deg2Rad * (Vector3.Angle (Vector3.forward, transform.forward))));
+
+				if (Mathf.Abs (Input.GetAxis ("Horizontal") + Input.GetAxis ("Vertical")) < 0.1) {
+						speedType = 0;
+				}
+
+				myAnimator.SetFloat (HashIDs.Speed, speedType);
 		}
 		private void crouchInputHandling ()
 		{
@@ -70,16 +85,19 @@ public class PlayerMovement : MonoBehaviour
 		{
 				if (Input.GetButtonDown ("Run") && !isPlayerCrouched) {
 						speedType = velocity.runSpeed;
-				} else if (Input.GetButtonUp ("Run") && !isPlayerCrouched) {
+				} else {
 						speedType = velocity.walkSpeed;
 				}
 		}
 
 		private void mouseMovementInputHandling ()
 		{
-				if (Input.GetAxis ("Mouse Y") > 0 ? Vector3.Angle (POV.forward, transform.up) > MaxCameraRotation : Vector3.Angle (POV.forward, transform.up) < MinCameraRotation)
-						rotatePOV (new Vector3 (-Input.GetAxis ("Mouse Y") * MouseSpeed * Time.deltaTime, 0, 0));
-				transform.Rotate (new Vector3 (0, Input.GetAxis ("Mouse X") * MouseSpeed * Time.deltaTime, 0));
+				if (Input.GetAxis ("Mouse Y") > 0 ? Vector3.Angle (POV.forward, transform.up) > MaxCameraRotation : Vector3.Angle (POV.forward, transform.up) < MinCameraRotation) {
+						//rotatePOV (new Vector3 (-Input.GetAxis ("Mouse Y") * MouseSpeed * Time.deltaTime, 0, 0));
+						myAnimator.SetFloat (HashIDs.Leaning, Mathf.Lerp (0, 1, myAnimator.GetFloat (HashIDs.Leaning) - Input.GetAxis ("Mouse Y") * MouseSpeedY * Time.deltaTime));
+				}
+
+				transform.Rotate (new Vector3 (0, Input.GetAxis ("Mouse X") * MouseSpeedX * Time.deltaTime, 0));
 		}
 
 		private void rotatePOV (Vector3 a_eulerAngles)

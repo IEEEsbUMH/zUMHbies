@@ -62,7 +62,7 @@ public class ItemManagement : MonoBehaviour
 
 				//Place in hand
 				if (t_newEquipedIPickable != null) {
-						t_newEquipedIPickable._Place (a_handIndex == 0 ? LeftHand : RightHand, t_newEquipedIPickable._EquipPosition, true);
+						t_newEquipedIPickable._Place (a_handIndex == 0 ? LeftHand : RightHand, t_newEquipedIPickable._EquipPosition, true, a_handIndex);
 						t_newEquipedIPickable._Equiped = true;
 						myAnimManager._Equip (a_handIndex, t_newEquipedIPickable);
 				}

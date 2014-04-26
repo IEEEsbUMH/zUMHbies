@@ -26,7 +26,10 @@ public class ItemUseSystem : MonoBehaviour
 				IPickable t_pickable = myItemManagement.handsContent [a_handIndex] as IPickable;
 				if (t_pickable != null) {
 						t_pickable._BeUsed ();
+						myAnimManager._Use (a_handIndex);
+				} else {
+						myAnimManager._SimpleAttack ();
 				}
-				myAnimManager._Use (a_handIndex);
+				
 		}
 }

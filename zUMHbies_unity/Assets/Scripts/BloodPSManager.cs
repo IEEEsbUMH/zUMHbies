@@ -14,7 +14,7 @@ public class BloodPSManager : MonoBehaviour
 
 				int t_eventNum = particleSystem.GetCollisionEvents (a_hitGO, collisionEvents);
 				
-				print (a_hitGO);
+				//print (a_hitGO);
 
 				for (int i =0; i<t_eventNum; i++) {
 						Vector3 b_position = collisionEvents [i].intersection;

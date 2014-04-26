@@ -51,6 +51,10 @@ public class Character1_AnimationManager : MonoBehaviour, IAnimationManager
 				}
 		}
 
+		public void _SimpleAttack ()
+		{
+
+		}
 		public void _Unequip (int a_handIndex)
 		{
 				if (a_handIndex == 0) { //Left hand

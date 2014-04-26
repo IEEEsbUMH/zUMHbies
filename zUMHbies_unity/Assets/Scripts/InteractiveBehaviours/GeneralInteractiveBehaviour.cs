@@ -29,7 +29,7 @@ public class GeneralInteractiveBehaviour : MonoBehaviour, IInteractive
 								
 								return renderer;
 						} else {
-								print ("Warning: " + name + " does not have any renderer to be returned!");
+								Debug.LogWarning ("Warning: " + name + " does not have any renderer to be returned!");
 								return null;
 						}
 				}

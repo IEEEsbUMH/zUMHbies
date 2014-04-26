@@ -104,7 +104,6 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 
 						//Is the light managed by a player?
 						IPickable t_light = a_collider.gameObject.Ext_GetClosestBehaviourWithInterfaceInHierarchy<IPickable> ();
-						
 						if (t_light != null && t_light._Equiped == true) {
 
 								//Direct vision with player?

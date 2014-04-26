@@ -12,4 +12,7 @@ public static class HashIDs
 		public static int Attack_Two = Animator.StringToHash ("Attack_Two");
 		public static int Leaning = Animator.StringToHash ("Leaning");
 		public static int AddFlashlight = Animator.StringToHash ("AddFlashlight");
+		public static int Speed = Animator.StringToHash ("Speed");
+		public static int Punch = Animator.StringToHash ("Punch");
+
 }

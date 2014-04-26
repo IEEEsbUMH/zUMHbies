@@ -6,6 +6,9 @@ public class Character2_AnimationManager : MonoBehaviour, IAnimationManager
 		protected Animator myAnimator;
 		protected ItemManagement myItemManagement;
 
+		public HandAsWeapon LeftHandAsWeapon;
+		public HandAsWeapon RightHandAsWeapon;
+
 		void Start ()
 		{
 				myAnimator = GetComponent<Animator> ();
@@ -56,6 +59,11 @@ public class Character2_AnimationManager : MonoBehaviour, IAnimationManager
 				}
 		}
 
+		public void _SimpleAttack ()
+		{
+				myAnimator.SetTrigger (HashIDs.Punch);
+		}
+
 		public void _Unequip (int a_handIndex)
 		{
 				if (a_handIndex == 0) { //Left hand
@@ -71,13 +79,29 @@ public class Character2_AnimationManager : MonoBehaviour, IAnimationManager
 		public void AE_DamageOn (int a_handIndex)
 		{
 				IUsableAsMeleeWeapon t_meleeWeapon = myItemManagement.handsContent [a_handIndex] as IUsableAsMeleeWeapon;
-				t_meleeWeapon._DoesDamage = true;
+
+				if (t_meleeWeapon != null)
+						t_meleeWeapon._DoesDamage = true;
+				else {
+						if (a_handIndex == 0)
+								LeftHandAsWeapon._DoesDamage = true;
+						else if (a_handIndex == 1)
+								RightHandAsWeapon._DoesDamage = true;
+				}
 		}
 
 		public void AE_DamageOff (int a_handIndex)
 		{
 				IUsableAsMeleeWeapon t_meleeWeapon = myItemManagement.handsContent [a_handIndex] as IUsableAsMeleeWeapon;
-				t_meleeWeapon._DoesDamage = false;
+
+				if (t_meleeWeapon != null)
+						t_meleeWeapon._DoesDamage = false;
+				else {
+						if (a_handIndex == 0)
+								LeftHandAsWeapon._DoesDamage = false;
+						else if (a_handIndex == 1)
+								RightHandAsWeapon._DoesDamage = false;
+				}
 		}
 
 		public void AE_InteractionComplete ()

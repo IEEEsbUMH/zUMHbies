@@ -15,9 +15,11 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 
 		public bool Equiped;
 
-		public Vector3 EquipPosition;
+		public Vector3 EquipPosition0;
+		public Vector3 EquipPosition1;
 		public Vector3 DropRotation; //Rotation in euler angles, will be converted to quaternion when asked for _DropRotation
-		public Vector3 EquipRotation; //Same
+		public Vector3 EquipRotation0; //Same
+		public Vector3 EquipRotation1;
 
 		protected int animID;
 
@@ -66,7 +68,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 
 		public Vector3 _EquipPosition {
 				get {
-						return EquipPosition;
+						return default(Vector3); //Shitty fix
 				}
 		}
 
@@ -148,7 +150,7 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 				gameObject.SetActive (true);
 		}
 
-		public void _Place (Transform a_parent, Vector3 a_coordinates, bool a_beKinematic = false)
+		public void _Place (Transform a_parent, Vector3 a_coordinates, bool a_beKinematic = false, int a_handIndex = 0)
 		{
 
 				transform.parent = a_parent;
@@ -163,8 +165,8 @@ public class GeneralPickableBehaviour : MonoBehaviour, IInteractive, IPickable
 						gameObject.layer = Layers.DEFAULT;
 						collider.enabled = true; //In case the collider is still disabled;
 				} else {//Parented, so the pickable is equipped
-						transform.localEulerAngles = EquipRotation;
-						//print (transform.localRotation.eulerAngles);
+						transform.localPosition = a_handIndex == 0 ? EquipPosition0 : EquipPosition1;
+						transform.localEulerAngles = a_handIndex == 0 ? EquipRotation0 : EquipRotation1;
 						gameObject.layer = Layers.ITEMS_IN_HANDS;
 						collider.enabled = false; //No need to be active in general
 				}
