@@ -6,6 +6,7 @@ public class PushAndOpenBehaviour : GeneralSwitchBehaviour
 		public override void _Activate ()
 		{
 				switchableBehaviour._Activate ();
-				MyAnimator.SetTrigger (HashIDs.Open);
+				if (MyAnimator != null)
+						MyAnimator.SetTrigger (HashIDs.Open);
 		}
 }

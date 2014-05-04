@@ -10,7 +10,7 @@
 		LOD 200
 		
 		CGPROGRAM
-		#pragma surface surf Lambert
+		#pragma surface surf Lambert exclude_path:prepass
 
 		fixed4 _MainColor;
 		sampler2D _MainTex;

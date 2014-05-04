@@ -27,6 +27,8 @@ public class ItemManagement : MonoBehaviour
 								if (bagContent [i] == null) {
 										bagContent [i] = a_pickable;
 										a_pickable._BeStored ();
+										if (OVR_Helper.UsingOVR)
+												AutoEquip ();
 										return true;
 								}
 						}
@@ -99,5 +101,10 @@ public class ItemManagement : MonoBehaviour
 				}
 
 				return r_room;
+		}
+
+		void AutoEquip ()
+		{
+				PlaceInHand (0, handsContent [0] == null ? 0 : 1);
 		}
 }

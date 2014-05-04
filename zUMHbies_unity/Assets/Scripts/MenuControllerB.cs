@@ -5,6 +5,7 @@ public class MenuControllerB : MonoBehaviour
 {
 
 		public GameObject[] SelectableGameobjects;
+		public TextMesh OculusTextMesh;
 		public float MovementSpeed;
 		public float EndRotation;
 		public float EndX;
@@ -49,7 +50,8 @@ public class MenuControllerB : MonoBehaviour
 								break;
 
 						case 1:
-
+								OVR_Helper.UsingOVR = !OVR_Helper.UsingOVR;
+								OculusTextMesh.text = OVR_Helper.UsingOVR ? "Oculus VR: ON" : "Oculus VR: OFF";
 								break;
 						}
 				}

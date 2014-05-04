@@ -5,6 +5,7 @@ public class Interact : MonoBehaviour
 {
 		public bool Interacts; //Used for disabling interaction in certain ocasions
 		public Transform POV;
+		public Transform OVR_POV;
 		public float RayDistance;
 		public float DropDistance;
 
@@ -20,6 +21,9 @@ public class Interact : MonoBehaviour
 		{
 				myItemManagement = GetComponent<ItemManagement> ();
 				myInventoryLayout = GameObject.FindWithTag (Tags.GAME_CONTROLLER).GetComponent<InventoryLayout> ();
+
+				if (OVR_Helper.UsingOVR)
+						POV = OVR_POV;
 		}
 
 		void Update ()

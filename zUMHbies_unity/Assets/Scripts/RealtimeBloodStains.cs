@@ -19,7 +19,7 @@ public class RealtimeBloodStains : MonoBehaviour
 		public int MaxNumberOfProjectors;
 
 		private DS_Decals ds;
-		private Matrix4x4 worldToDecalsMatrix;
+		//private Matrix4x4 worldToDecalsMatrix;
 
 		private List<DecalProjector> decalProjectors = new List<DecalProjector> ();
 
@@ -41,7 +41,7 @@ public class RealtimeBloodStains : MonoBehaviour
 				} else {
 						dMesh = new DecalsMesh (ds);
 						dMeshCutter = new DecalsMeshCutter ();
-						worldToDecalsMatrix = ds.CachedTransform.worldToLocalMatrix;
+						//worldToDecalsMatrix = ds.CachedTransform.worldToLocalMatrix;
 				}
 		}
 

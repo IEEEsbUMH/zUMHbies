@@ -38,7 +38,7 @@ public class GeneralInteractiveBehaviour : MonoBehaviour, IInteractive
 		protected virtual void Start ()
 		{
 				if (_RendererTarget != null)
-						originalMaterial = renderer.materials [OutlinedMaterialIndex];
+						originalMaterial = _RendererTarget.materials [OutlinedMaterialIndex];
 		}
 
 		public virtual void _Activate ()

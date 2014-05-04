@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MirrorTrigger : MonoBehaviour
+public class MirrorTrigger : MonoBehaviour, ISwitchedByExtTrigger
 {
 		public Camera MyCamera;
 
@@ -16,21 +16,20 @@ public class MirrorTrigger : MonoBehaviour
 				MyCamera.enabled = false;
 		}
 
-		void OnBecameVisible ()
+		public void _TriggerEnterSwitch (int a_index, Collider a_collider)
 		{
-				MyCamera.enabled = true;
+				if (a_collider.gameObject == player && a_index == 0)
+						MyCamera.enabled = true;
 		}
 
-		void OnBecameInvisible ()
+		public void _TriggerStaySwitch (int a_index, Collider a_collider)
 		{
-				MyCamera.enabled = false;
+				//Nothin'
 		}
 
-		/*void Update ()
+		public void _TriggerExitSwitch (int a_index, Collider a_collider)
 		{
-				if (MyCamera.enabled) {
-						Vector3 relativePos = transform.worldToLocalMatrix * player.transform.position;
-						MyCamera.transform.position = new Vector3 (player.transform.position.x, MyCamera.transform.position.y);
-				}
-		}*/
+				if (a_collider.gameObject == player && a_index == 0)
+						MyCamera.enabled = false;
+		}
 }

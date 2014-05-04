@@ -50,6 +50,8 @@ public class Character2_AnimationManager : MonoBehaviour, IAnimationManager
 
 		public void _Use (int a_handIndex)
 		{
+				if (Random.Range (0, 2) < 1)
+						myAnimator.SetTrigger (HashIDs.Attack_Two);
 				if (a_handIndex == 0) { //Left hand
 						myAnimator.SetTrigger (HashIDs.Use);
 						myAnimator.SetTrigger (HashIDs.Arm_L_Action);
