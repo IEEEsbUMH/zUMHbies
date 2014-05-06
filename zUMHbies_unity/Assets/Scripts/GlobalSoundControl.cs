@@ -19,16 +19,13 @@ public class GlobalSoundControl : MonoBehaviour
 		{
 			currentAudioSource = 0;
 			ChangeToAtmosphere();
-			PlayNextClip(0);
 		}
 	
 		void Update()
 		{
 			if(!AudioSources[currentAudioSource].isPlaying) 
 			{
-				ChangeToTension();
 				PlayNextClip();
-				
 			}
 		}
 
@@ -58,7 +55,7 @@ public class GlobalSoundControl : MonoBehaviour
 			AudioSources[currentAudioSource].Play();
 		}
 
-		private void PlayNextClip (int clip)
+		private void PlayClip (int clip)
 		{
 			SetCurrentAudioSource();
 			AudioSources[currentAudioSource].clip = CurrentTheme[clip];
