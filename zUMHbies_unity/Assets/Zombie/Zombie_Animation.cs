@@ -21,8 +21,10 @@ public class Zombie_Animation : MonoBehaviour {
 	CharacterController Controller;
 	protected CapsuleCollider Collider;
 	public GameObject CapsuleCollider;
-	protected float AxisH;
+	public float AxisH;
 	protected float AxisV;
+	protected ZombieBasicBehaviour myBehaviour;
+
 	void Start () {
 		InvokeRepeating ("Randomizar",1,4);
 		Animation_Zombie = GetComponent<Animator> ();
@@ -30,11 +32,13 @@ public class Zombie_Animation : MonoBehaviour {
 		Animation_Zombie.SetLayerWeight (2, 2f);
 	    Controller = GetComponent<CharacterController>();
 		Collider = CapsuleCollider.gameObject.transform.GetComponent<CapsuleCollider>();
+		myBehaviour = GetComponent<ZombieBasicBehaviour> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		Detected = this.gameObject.GetComponent<ZombieBasicBehaviour> ().chasingPlayer;
+		Length=Vector3.Distance (this.gameObject.transform.position, Player.transform.position);
 		if (Detected == true) {
 			Animation_Zombie.SetBool ("look",true);
 				} 
@@ -48,13 +52,13 @@ public class Zombie_Animation : MonoBehaviour {
 			Animation_Zombie.SetBool ("floor",false);
 		}
 		//Mask
-		if (AttackOut == true) {
+		if (AttackOut == true&&Detected==true) {
 						Animation_Zombie.SetBool ("AttackOut", true);
 				} else {
 						Animation_Zombie.SetBool ("AttackOut", false);
 				}
 		//Distance to Player and figth
-		Length=Vector3.Distance (this.gameObject.transform.position, Player.transform.position);
+
 		if (Length <= 2&&Length>1) {
 						AttackOut = true;
 			            AttackIn=false;
@@ -67,10 +71,11 @@ public class Zombie_Animation : MonoBehaviour {
 			AttackIn=true;
 			Animation_Zombie.SetBool ("AttackIn", true);
 				}
-		//Lantern
+		//Cerca
 		AxisH=Input.GetAxis ("Horizontal");
 		AxisV=Input.GetAxis ("Vertical");
-		if (Length <= 3.5 && (AxisH == 1 || AxisV == 1)) {
+		if (Length <= 3.5 && (AxisH > 0.8 || AxisH < -0.8 || AxisV > 0.8 || AxisV < -0.8)) {
+			myBehaviour.CallFunction();
 			//Debe de llamar a protected IEnumerator chasePlayer ()
 		}
 		//Damage

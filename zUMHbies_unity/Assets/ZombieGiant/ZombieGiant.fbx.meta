@@ -40,22 +40,22 @@ ModelImporter:
     100068: hand_L
     100070: hand_R
     100072: head
-    100074: Human_Before
-    100076: lip
-    100078: lip_upper
-    100080: neck
-    100082: pelvis_L
-    100084: pelvis_R
-    100086: Scapula_L
-    100088: Scapula_R
-    100090: shoulder_L
-    100092: shoulder_R
-    100094: thigh_L
-    100096: thigh_R
-    100098: Trousers
-    100100: twin_L
-    100102: twin_R
-    100104: Zombi_Prototipe_One_Armature
+    100074: lip
+    100076: lip_upper
+    100078: neck
+    100080: pelvis_L
+    100082: pelvis_R
+    100084: Scapula_L
+    100086: Scapula_R
+    100088: shoulder_L
+    100090: shoulder_R
+    100092: thigh_L
+    100094: thigh_R
+    100096: Trousers
+    100098: twin_L
+    100100: twin_R
+    100102: Zombi_Prototipe_One_Armature
+    100104: Zombie_Giant
     100106: //RootNode
     400000: Body
     400002: Body_Two
@@ -94,25 +94,25 @@ ModelImporter:
     400068: hand_L
     400070: hand_R
     400072: head
-    400074: Human_Before
-    400076: lip
-    400078: lip_upper
-    400080: neck
-    400082: pelvis_L
-    400084: pelvis_R
-    400086: Scapula_L
-    400088: Scapula_R
-    400090: shoulder_L
-    400092: shoulder_R
-    400094: thigh_L
-    400096: thigh_R
-    400098: Trousers
-    400100: twin_L
-    400102: twin_R
-    400104: Zombi_Prototipe_One_Armature
+    400074: lip
+    400076: lip_upper
+    400078: neck
+    400080: pelvis_L
+    400082: pelvis_R
+    400084: Scapula_L
+    400086: Scapula_R
+    400088: shoulder_L
+    400090: shoulder_R
+    400092: thigh_L
+    400094: thigh_R
+    400096: Trousers
+    400098: twin_L
+    400100: twin_R
+    400102: Zombi_Prototipe_One_Armature
+    400104: Zombie_Giant
     400106: //RootNode
     4300000: Trousers
-    4300002: Human_Before
+    4300002: Zombie_Giant
     7400000: Default Take
     7400002: Damage
     7400004: Fight
@@ -125,8 +125,8 @@ ModelImporter:
     7400018: Walk
     7400020: Walk_Zombie
     9500000: //RootNode
-    13700000: Human_Before
-    13700002: Trousers
+    13700000: Trousers
+    13700002: Zombie_Giant
   materials:
     importMaterials: 1
     materialName: 0
@@ -168,10 +168,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -183,9 +181,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -273,6 +271,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -286,8 +286,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
@@ -302,10 +302,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -317,9 +315,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -407,6 +405,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -420,8 +420,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
@@ -436,10 +436,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -451,9 +449,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -541,6 +539,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -554,8 +554,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
@@ -570,10 +570,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -585,9 +583,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -675,6 +673,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -704,10 +704,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -719,9 +717,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -809,6 +807,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -838,10 +838,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -853,9 +851,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -944,12 +942,14 @@ ModelImporter:
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
         weight: 1
+      - path: Zombie_Giant
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
       name: State
       takeName: State
-      firstFrame: 0
+      firstFrame: 103
       lastFrame: 159
       wrapMode: 0
       orientationOffsetY: 0
@@ -972,10 +972,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -987,9 +985,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1077,6 +1075,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1106,10 +1106,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1121,9 +1119,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1211,6 +1209,8 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
+        weight: 1
+      - path: Zombie_Giant
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1240,10 +1240,8 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Human_Before
-        weight: 0
       - path: Trousers
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body
@@ -1255,9 +1253,9 @@ ModelImporter:
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/neck/head/lip_upper
-        weight: 0
+        weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/Body_Two/Scapula_L/shoulder_L
@@ -1346,12 +1344,14 @@ ModelImporter:
         weight: 1
       - path: Zombi_Prototipe_One_Armature/Body/pelvis_R/thigh_R/twin_R/foot_R
         weight: 1
+      - path: Zombie_Giant
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .023
+    globalScale: .0250000004
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -1646,30 +1646,6 @@ ModelImporter:
         length: 0
         modified: 0
     - boneName: fingerThree_L
-      humanName: Right Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: finger_Three_L
-      humanName: Right Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: finger__Three_L
-      humanName: Right Middle Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: fingerTwo_L
       humanName: Right Ring Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1677,7 +1653,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger_Two_L
+    - boneName: finger_Three_L
       humanName: Right Ring Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -1685,16 +1661,8 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger__Two_L
+    - boneName: finger__Three_L
       humanName: Right Ring Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: fingerOne_L
-      humanName: Right Little Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -1725,8 +1693,8 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: finger__One_R
-      humanName: Left Little Distal
+    - boneName: fingerOne_L
+      humanName: Right Little Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -1741,15 +1709,18 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: finger__One_R
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     skeleton:
     - name: ZombieGiant(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Human_Before
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Trousers
@@ -1763,254 +1734,259 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Body
-      position: {x: -.00202277652, y: .12002746, z: .854775906}
-      rotation: {x: -.5, y: -.5, z: .5, w: -.5}
+      position: {x: -.00219867029, y: .130464643, z: .929104328}
+      rotation: {x: .499986708, y: .500013292, z: -.499986708, w: .500013292}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: Body_Two
-      position: {x: -.29979077, y: 2.27623147e-08, z: -3.23225402e-09}
+      position: {x: -.325859517, y: 2.4741647e-08, z: -3.51331986e-09}
       rotation: {x: 2.85844237e-10, y: -8.72664627e-18, z: 4.18879021e-16, w: 1}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: neck
-      position: {x: -.29979068, y: 2.27073382e-08, z: -2.02352601e-09}
+      position: {x: -.325859487, y: 2.46818903e-08, z: -2.19948482e-09}
       rotation: {x: -.00399440527, y: .190854385, z: -.035864085, w: .980954885}
       scale: {x: .999999881, y: .999999821, z: 1}
       transformModified: 1
     - name: head
-      position: {x: -.0684028864, y: 8.05407741e-09, z: 2.37539055e-08}
+      position: {x: -.0743509755, y: 8.75443273e-09, z: 2.58194639e-08}
       rotation: {x: .00356434309, y: -.179091841, z: .0359093286, w: .983170331}
       scale: {x: 1.00000012, y: 1, z: .99999994}
       transformModified: 1
     - name: lip
-      position: {x: -.0430686772, y: .00016836854, z: .0617513284}
+      position: {x: -.0468137823, y: .000183009295, z: .067121014}
       rotation: {x: 2.14965269e-07, y: .85543102, z: -2.48382435e-07, w: .517916799}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: lip_upper
-      position: {x: -.0430686772, y: .00016836854, z: .0617513284}
+      position: {x: -.0468137823, y: .000183009295, z: .067121014}
       rotation: {x: 2.38345507e-07, y: .572414994, z: -1.36219342e-07, w: .819964051}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Scapula_L
-      position: {x: -.29979068, y: 4.40019103e-05, z: -2.04333461e-09}
+      position: {x: -.325859487, y: 4.7828169e-05, z: -2.22101604e-09}
       rotation: {x: .235404015, y: -.381939709, z: -.705537736, w: .54856509}
       scale: {x: .999999881, y: 1.00000012, z: 1}
       transformModified: 1
     - name: shoulder_L
-      position: {x: -.147452667, y: 3.5643577e-08, z: 5.48362689e-09}
+      position: {x: -.160274655, y: 3.87430212e-08, z: 5.96046457e-09}
       rotation: {x: .327684462, y: .146865264, z: .013648143, w: .933202684}
       scale: {x: 1, y: 1, z: 1.00000012}
       transformModified: 1
     - name: forearm_L
-      position: {x: -.260078728, y: -6.85453361e-10, z: -4.30122e-08}
+      position: {x: -.28269431, y: -7.45058071e-10, z: -4.6752394e-08}
       rotation: {x: -.225305736, y: -.00424353918, z: -.0096811289, w: .974230766}
       scale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
       transformModified: 1
     - name: hand_L
-      position: {x: -.294646621, y: 2.50190482e-08, z: -2.87890423e-08}
+      position: {x: -.320268124, y: 2.71946199e-08, z: -3.12924406e-08}
       rotation: {x: .217208967, y: -.0228099059, z: -.00741214119, w: .975830436}
       scale: {x: 1, y: .999999881, z: .999999762}
       transformModified: 1
     - name: fingerFive_L
-      position: {x: -.0456538573, y: .0584720001, z: -.0101039335}
-      rotation: {x: .926370978, y: -.374637455, z: .0109602567, w: -.0369250216}
+      position: {x: -.0496237576, y: .0635565221, z: -.0109825367}
+      rotation: {x: .91833812, y: -.391660094, z: .0440841578, w: -.0362505019}
       scale: {x: 1.00000012, y: 1, z: .999999881}
       transformModified: 1
     - name: finger_Five_L
-      position: {x: -.035818506, y: 1.91926954e-08, z: -5.175173e-08}
+      position: {x: -.0389331616, y: 2.08616253e-08, z: -5.62518849e-08}
       rotation: {x: -.693338752, y: .14149572, z: -.101660758, w: .699232042}
       scale: {x: .999999881, y: .999999821, z: .999999821}
       transformModified: 1
     - name: fingerFour_L
-      position: {x: -.0991156995, y: .0395618975, z: -.000108679284}
-      rotation: {x: .958825231, y: -.0214861669, z: .00292438106, w: .283167899}
+      position: {x: -.107734457, y: .0430020653, z: -.000118129654}
+      rotation: {x: .957349956, y: -.0694754347, z: -.0169849508, w: .279938847}
       scale: {x: 1.00000036, y: .999999821, z: .999999881}
       transformModified: 1
     - name: finger_Four_L
-      position: {x: -.0324489363, y: -2.74181335e-08, z: 2.19345075e-08}
+      position: {x: -.0352705866, y: -2.98023224e-08, z: 2.38418583e-08}
       rotation: {x: .00560616655, y: -.0100586526, z: .00862696115, w: .999896467}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: finger__Four_L
-      position: {x: -.0273708031, y: 2.74181335e-08, z: -3.83853909e-08}
+      position: {x: -.0297508743, y: 2.98023224e-08, z: -4.17232506e-08}
       rotation: {x: -.00426895497, y: -.00979278609, z: -.0501738675, w: .998683393}
       scale: {x: .999999821, y: .999999881, z: .999999881}
       transformModified: 1
     - name: fingerOne_L
-      position: {x: -.0899546593, y: -.0406588763, z: .000250833575}
-      rotation: {x: .181363627, y: -.0824265853, z: -.0264767148, w: .979597926}
+      position: {x: -.0977662802, y: -.0441748798, z: .000241477726}
+      rotation: {x: .2191284, y: -.000408725697, z: .0673883706, w: .973366082}
       scale: {x: .99999994, y: .99999994, z: .999999881}
       transformModified: 1
     - name: finger_One_L
-      position: {x: -.0254455153, y: 1.09672538e-08, z: -3.01599492e-08}
+      position: {x: -.0276581701, y: 1.19209291e-08, z: -3.27825553e-08}
       rotation: {x: -.0826319605, y: -.0291157477, z: -.0110949669, w: .996092975}
       scale: {x: .999999881, y: .99999994, z: .99999994}
       transformModified: 1
     - name: finger__One_L
-      position: {x: -.0216995999, y: -1.09672538e-08, z: 0}
+      position: {x: -.0235865247, y: -1.19209291e-08, z: 0}
       rotation: {x: .0693876743, y: .03299338, z: -.00415645493, w: .997035384}
       scale: {x: 1, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: fingerThree_L
-      position: {x: -.102174141, y: .0116338292, z: .00149137736}
+      position: {x: -.111058854, y: .0126454672, z: .00162106252}
       rotation: {x: .535582662, y: -.0461105332, z: -.00124251423, w: .843222082}
       scale: {x: 1, y: .999999821, z: 1}
       transformModified: 1
     - name: finger_Three_L
-      position: {x: -.0351526476, y: 2.74181335e-08, z: 0}
+      position: {x: -.0382094011, y: 2.98023224e-08, z: 0}
       rotation: {x: -.195084378, y: -.0250467751, z: .0253832396, w: .980138004}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: finger__Three_L
-      position: {x: -.0216070805, y: 0, z: 3.29017631e-08}
+      position: {x: -.0234859567, y: 0, z: 3.57627883e-08}
       rotation: {x: -.00163963484, y: .0149260396, z: -.0227986686, w: .999627292}
       scale: {x: .99999994, y: 1, z: 1}
       transformModified: 1
     - name: fingerTwo_L
-      position: {x: -.099748753, y: -.011099699, z: .00174191908}
-      rotation: {x: .318435937, y: -.00572708063, z: .023898812, w: .947625816}
+      position: {x: -.10842257, y: -.0120648909, z: .00189339032}
+      rotation: {x: .31689775, y: -.00140757638, z: .0865637437, w: .944500148}
       scale: {x: 1, y: .999999881, z: 1}
       transformModified: 1
     - name: finger_Two_L
-      position: {x: -.0347098187, y: -2.19345075e-08, z: -4.85815121e-08}
-      rotation: {x: -.00403776765, y: -.0342796482, z: -.0205122549, w: .999193668}
+      position: {x: -.0377280675, y: -2.38418583e-08, z: -5.28059907e-08}
+      rotation: {x: -.00403001765, y: -.0630504638, z: -.037729688, w: .997288764}
       scale: {x: .999999821, y: 1, z: 1}
       transformModified: 1
     - name: finger__Two_L
-      position: {x: -.028112933, y: 2.19345075e-08, z: 4.38690151e-08}
+      position: {x: -.0305575375, y: 2.38418583e-08, z: 4.76837165e-08}
       rotation: {x: .000842257519, y: .0190486144, z: -.00332134776, w: .999812722}
       scale: {x: 1, y: 1, z: 1.00000024}
       transformModified: 1
     - name: Scapula_R
-      position: {x: -.29979068, y: 2.27073382e-08, z: -2.02352601e-09}
+      position: {x: -.325859487, y: 2.46818903e-08, z: -2.19948482e-09}
       rotation: {x: .404696733, y: .589709759, z: -.539602458, w: -.44417581}
       scale: {x: 1, y: .99999994, z: .999999821}
       transformModified: 1
     - name: shoulder_R
-      position: {x: -.147024661, y: 1.56797455e-08, z: 2.9474494e-08}
+      position: {x: -.159809425, y: 1.70432042e-08, z: 3.2037498e-08}
       rotation: {x: .00204471732, y: .145210564, z: .0318094939, w: .988887191}
       scale: {x: 1, y: .99999994, z: .99999994}
       transformModified: 1
     - name: forearm_R
-      position: {x: -.211939618, y: -2.22772356e-09, z: -4.68464521e-08}
+      position: {x: -.230369166, y: -2.42143883e-09, z: -5.09200611e-08}
       rotation: {x: .00058953464, y: -.0152856587, z: .0322192907, w: .99936378}
       scale: {x: .999999821, y: .999999821, z: 1}
       transformModified: 1
     - name: hand_R
-      position: {x: -.241710082, y: 7.45430562e-09, z: 5.56288278e-08}
+      position: {x: -.262728363, y: 8.10250622e-09, z: 6.0466121e-08}
       rotation: {x: 3.68033361e-05, y: .0102302032, z: -.0673265755, w: .997678578}
       scale: {x: 1, y: 1.00000012, z: 1.00000024}
       transformModified: 1
     - name: fingerFive_R
-      position: {x: -.0419671834, y: -.0488738455, z: -.0109404167}
-      rotation: {x: .604806304, y: .232813373, z: .279860616, w: .70829761}
+      position: {x: -.0456165038, y: -.0531237498, z: -.011891759}
+      rotation: {x: .592772663, y: .205259725, z: .378534764, w: .680588305}
       scale: {x: 1.00000012, y: 1, z: 1}
       transformModified: 1
     - name: finger_Five_R
-      position: {x: -.0347182862, y: -2.70754086e-08, z: 1.91926954e-08}
+      position: {x: -.0377372727, y: -2.94297937e-08, z: 2.08616253e-08}
       rotation: {x: .0240917001, y: -.163784742, z: -.0131831691, w: .986113787}
       scale: {x: .99999994, y: .999999881, z: .999999881}
       transformModified: 1
     - name: fingerFour_R
-      position: {x: -.0964901149, y: -.034227971, z: -.00322152977}
-      rotation: {x: .702031374, y: .0687767565, z: .107716724, w: .70058465}
+      position: {x: -.104880571, y: -.0372043215, z: -.00350166298}
+      rotation: {x: .702031255, y: .0687765107, z: .107717067, w: .70058465}
       scale: {x: 1.00000024, y: 1.00000012, z: .99999994}
       transformModified: 1
     - name: finger_Four_R
-      position: {x: -.0373379402, y: 2.93031324e-08, z: -5.48362689e-09}
+      position: {x: -.0405847207, y: 3.18512328e-08, z: -5.96046457e-09}
       rotation: {x: .00341963116, y: -.035005305, z: .0202797838, w: .999175489}
       scale: {x: .99999994, y: 1, z: .999999821}
       transformModified: 1
     - name: finger__Four_R
-      position: {x: -.0207848325, y: 3.87281176e-08, z: 2.14204188e-09}
+      position: {x: -.0225922093, y: 4.20957811e-08, z: 2.32830644e-09}
       rotation: {x: .0306417216, y: .0118579753, z: .00954575464, w: .999414504}
       scale: {x: .99999994, y: .999999881, z: 1}
       transformModified: 1
     - name: fingerOne_R
-      position: {x: -.0960653946, y: .0356956236, z: -.00592409959}
-      rotation: {x: .708723903, y: .00685391529, z: .00774493162, w: .705410182}
+      position: {x: -.104423217, y: .0387977622, z: -.00644823303}
+      rotation: {x: .701811492, y: -.0436613411, z: .0170823243, w: .710818291}
       scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: finger_One_R
-      position: {x: -.0238699783, y: 1.57654281e-08, z: -1.05388462e-08}
+      position: {x: -.0259456318, y: 1.7136335e-08, z: -1.14552678e-08}
       rotation: {x: -.00994950347, y: .00843022764, z: .0122210514, w: .999840319}
       scale: {x: 1, y: 1.00000012, z: 1}
       transformModified: 1
     - name: finger__One_R
-      position: {x: -.0177261252, y: -1.37090672e-09, z: 1.09672538e-08}
+      position: {x: -.0192675292, y: -1.49011614e-09, z: 1.19209291e-08}
       rotation: {x: .00759892259, y: .0261632428, z: .0680741146, w: .997308195}
       scale: {x: .99999994, y: 1, z: 1.00000012}
       transformModified: 1
     - name: fingerThree_R
-      position: {x: -.104823455, y: -.010660857, z: -.000159472605}
-      rotation: {x: .706265807, y: -.00918047037, z: .104741119, w: .700095475}
+      position: {x: -.113938548, y: -.011587888, z: -.000173339795}
+      rotation: {x: .706265807, y: -.00918051228, z: .104741238, w: .700095415}
       scale: {x: .999999881, y: .99999994, z: .999999821}
       transformModified: 1
     - name: finger_Three_R
-      position: {x: -.0385277607, y: 2.02208739e-08, z: -1.73076984e-08}
+      position: {x: -.0418779999, y: 2.19792131e-08, z: -1.88127167e-08}
       rotation: {x: .005231319, y: 1.23870304e-05, z: -.0301516615, w: .999531686}
       scale: {x: 1.00000012, y: 1, z: 1.00000012}
       transformModified: 1
     - name: finger__Three_R
-      position: {x: -.0207457654, y: 4.81531011e-08, z: 3.94135702e-09}
+      position: {x: -.0225497466, y: 5.23403294e-08, z: 4.28408375e-09}
       rotation: {x: -.00376515556, y: .0070097982, z: .0305234492, w: .99950242}
       scale: {x: 1, y: .999999821, z: .999999881}
       transformModified: 1
     - name: fingerTwo_R
-      position: {x: -.103770562, y: .0125295119, z: .00115247339}
-      rotation: {x: .705600083, y: -.0401791632, z: .0698102266, w: .70401758}
+      position: {x: -.112794094, y: .0136190355, z: .00125268858}
+      rotation: {x: .705600083, y: -.0401785783, z: .0698099658, w: .704017639}
       scale: {x: .999999821, y: .999999881, z: 1}
       transformModified: 1
     - name: finger_Two_R
-      position: {x: -.0301557891, y: 4.90099161e-08, z: 1.35162841e-08}
+      position: {x: -.0327780358, y: 5.3271652e-08, z: 1.46916141e-08}
       rotation: {x: .00227856473, y: .0104416013, z: .00492683705, w: .999930739}
       scale: {x: .999999881, y: .999999881, z: .999999881}
       transformModified: 1
     - name: finger__Two_R
-      position: {x: -.024572771, y: 1.64508815e-08, z: 7.88271404e-09}
+      position: {x: -.0267095361, y: 1.78813941e-08, z: 8.56816751e-09}
       rotation: {x: -.022665428, y: -.009661166, z: .052242931, w: .998330414}
       scale: {x: 1, y: 1, z: .999999821}
       transformModified: 1
     - name: pelvis_L
-      position: {x: .00927632209, y: 4.39789219e-05, z: 2.03795048e-06}
+      position: {x: .0100829592, y: 4.78031834e-05, z: 2.2151637e-06}
       rotation: {x: -.362368733, y: .607275069, z: .607197404, w: -.362239182}
       scale: {x: 1.00000012, y: .99999994, z: .99999994}
       transformModified: 1
     - name: thigh_L
-      position: {x: -.0969002917, y: -7.56887619e-09, z: 1.26858457e-09}
+      position: {x: -.105326414, y: -8.22703949e-09, z: 1.37889633e-09}
       rotation: {x: .631808102, y: -.400373518, z: .317384362, w: .582912266}
       scale: {x: .999999762, y: 1, z: .999999702}
       transformModified: 1
     - name: twin_L
-      position: {x: -.338758349, y: 2.56616612e-08, z: -7.8291631e-09}
+      position: {x: -.368215591, y: 2.78931118e-08, z: -8.50995985e-09}
       rotation: {x: .00153409888, y: .125137463, z: .0122513548, w: .992062569}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: foot_L
-      position: {x: -.374404758, y: 2.35624604e-08, z: 6.03520256e-09}
+      position: {x: -.406961739, y: 2.56113708e-08, z: 6.56000365e-09}
       rotation: {x: .682034194, y: -.00523869321, z: .73127532, w: .00619089697}
       scale: {x: 1, y: .999999762, z: .999999881}
       transformModified: 1
     - name: pelvis_R
-      position: {x: .00927632209, y: -2.79070766e-10, z: 2.03797026e-06}
+      position: {x: .0100829592, y: -3.03337799e-10, z: 2.21518508e-06}
       rotation: {x: .358620375, y: .609495759, z: -.609419107, w: -.358489454}
       scale: {x: .999999762, y: 1, z: .999999881}
       transformModified: 1
     - name: thigh_R
-      position: {x: -.0947438776, y: -1.302101e-08, z: -1.681817e-08}
+      position: {x: -.102982476, y: -1.41532723e-08, z: -1.82806215e-08}
       rotation: {x: -.630953729, y: -.401316583, z: -.317784548, w: .582971275}
       scale: {x: 1.00000012, y: 1.00000012, z: 1}
       transformModified: 1
     - name: twin_R
-      position: {x: -.338752478, y: 2.41622313e-08, z: 9.19471521e-09}
+      position: {x: -.368209213, y: 2.62632973e-08, z: 9.9942552e-09}
       rotation: {x: -.0015862505, y: .125139654, z: .00481080683, w: .992126226}
       scale: {x: .999999762, y: .999999762, z: .999999762}
       transformModified: 1
     - name: foot_R
-      position: {x: -.374357969, y: 3.21199174e-08, z: 1.44587826e-08}
+      position: {x: -.406910866, y: 3.49129543e-08, z: 1.57160684e-08}
       rotation: {x: .682058871, y: -.00187724712, z: .731294572, w: .000643086212}
       scale: {x: 1.00000036, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Zombie_Giant
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     armTwist: .5
     foreArmTwist: .5

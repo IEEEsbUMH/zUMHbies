@@ -27,6 +27,8 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 
 	protected int Destination=0;
 	protected float dist;
+	public GameObject Die;
+	public Transform pos;
 	//IKillable members
 	public int _MaxHealth {
 		get {
@@ -60,7 +62,8 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 	public void _Die ()
 	{
 		health = 0; //In case it was negative -not that important anyway-
-		
+		Instantiate(Die, pos.position, Quaternion.identity);
+		Destroy (this.gameObject);
 		//Scream or something
 	}
 	//END OF IKillable MEMBERS
@@ -168,7 +171,9 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 	{
 		myNavMeshAgent.speed = RunSpeed;
 	}
-	
+	public void CallFunction(){
+		StartCoroutine (chasePlayer ());
+	}
 	protected IEnumerator chasePlayer ()
 	{
 		busy = true;
