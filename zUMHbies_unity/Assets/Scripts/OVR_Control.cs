@@ -12,7 +12,8 @@ public class OVR_Control : MonoBehaviour
 	
 		void Start ()
 		{
-				OVR_Helper.UsingOVR = Debug_UsingOVR;
+				if (Debug_UsingOVR)
+						OVR_Helper.UsingOVR = true;
 
 				if (OVR_Helper.UsingOVR) {
 						foreach (GameObject b_go in NormalCameras) {

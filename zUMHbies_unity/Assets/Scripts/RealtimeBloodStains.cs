@@ -55,6 +55,7 @@ public class RealtimeBloodStains : MonoBehaviour
 				dMesh.AddProjector (n_projector);
 
 				//Required matrices
+				//print (a_projectOnGO);
 				Matrix4x4 l_WorldToMeshMatrix = a_projectOnGO.GetClosestComponentInHierarchy<MeshRenderer> ().worldToLocalMatrix;
 				Matrix4x4 l_MeshToWorldMatrix = a_projectOnGO.GetClosestComponentInHierarchy<MeshRenderer> ().localToWorldMatrix;
 
