@@ -78,9 +78,9 @@ public class GlobalSoundControl : MonoBehaviour
 			AudioSources[currentAudioSource].Play();
 		}
 
-		private void PlayClip (int clip)
+		private void PlayClip (int clip, AudioClip[] theme)
 		{
-			AudioSources[currentAudioSource].clip = CurrentTheme[clip];
+			AudioSources[currentAudioSource].clip = theme[clip];
 			AudioSources[currentAudioSource].loop = false;
 			AudioSources[currentAudioSource].Play();
 		}
