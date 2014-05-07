@@ -25,7 +25,7 @@ public class FlashlightBehaviour : GeneralPickableBehaviour
 		public override void _BeUsed ()
 		{
 				on_off ();
-				Debug.Log (transform.rotation.eulerAngles);
+				//Debug.Log (transform.rotation.eulerAngles);
 		}
 
 		private void on_off ()
