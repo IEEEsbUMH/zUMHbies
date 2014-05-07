@@ -18,7 +18,7 @@ public class Zombie_Animation : MonoBehaviour {
 	public float SizeCapsuleCollider;
 	public float PositionCapsuleColliderCenter;
 	public float RadiusCapsule;
-	CharacterController Controller;
+	protected CharacterController Controller;
 	protected CapsuleCollider Collider;
 	public GameObject CapsuleCollider;
 	public float AxisH;

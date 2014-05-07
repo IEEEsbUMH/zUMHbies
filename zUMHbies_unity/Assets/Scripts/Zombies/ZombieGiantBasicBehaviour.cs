@@ -27,8 +27,8 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 
 	protected int Destination=0;
 	protected float dist;
-	public GameObject Die;
 	public Transform pos;
+	public bool Die;
 	//IKillable members
 	public int _MaxHealth {
 		get {
@@ -62,8 +62,7 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 	public void _Die ()
 	{
 		health = 0; //In case it was negative -not that important anyway-
-		Instantiate(Die, pos.position, Quaternion.identity);
-		Destroy (this.gameObject);
+		Die = true;
 		//Scream or something
 	}
 	//END OF IKillable MEMBERS
