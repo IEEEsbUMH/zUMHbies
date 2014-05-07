@@ -51,7 +51,7 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 	
 	public void _TakeDamage (float a_damage, Vector3 a_hitPoint)
 	{
-		print ("ayayayay");//falta que cuando pegas con las manos se llame a esta funcion
+		//print ("ayayayay");//falta que cuando pegas con las manos se llame a esta funcion
 		Damage = true;
 		StartCoroutine(TestCoroutine());
 		health -= a_damage;
@@ -132,6 +132,7 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 				busy = true;
 				StopCoroutine ("attentionTowards"); //Stops all previous attention
 				StartCoroutine ("attentionTowards", a_collider.transform.parent.position); //Real center of the light is in the parent of the light
+				StartCoroutine (chasePlayer ());//No se muy bien si este es correcto
 				//}
 			}
 		}
@@ -176,7 +177,6 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 	}
 	protected IEnumerator chasePlayer ()
 	{
-		busy = true;
 		chasingPlayer = true;
 		run ();
 		
@@ -191,7 +191,7 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 				break;
 			}
 		}
-		
+		myNavMeshAgent.Stop ();
 		chasingPlayer = false;
 		busy = false;
 	}

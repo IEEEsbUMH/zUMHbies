@@ -949,8 +949,8 @@ ModelImporter:
     - serializedVersion: 16
       name: State
       takeName: State
-      firstFrame: 103
-      lastFrame: 159
+      firstFrame: 99
+      lastFrame: 123
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

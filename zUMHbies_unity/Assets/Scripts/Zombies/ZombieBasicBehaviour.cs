@@ -134,10 +134,13 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 								//Direct vision with player?
 								//if (gameObject.Ext_DirectRay (HeadTransform.position, PlayerRefs.Player.transform.position, PlayerRefs.PlayerCollider)) {
 								busy = true;
+
 								StopCoroutine ("attentionTowards"); //Stops all previous attention
 								StartCoroutine ("attentionTowards", a_collider.transform.parent.position); //Real center of the light is in the parent of the light
+				                StartCoroutine (chasePlayer ());//No se muy bien si este es correcto
 								//}
 						}
+
 				}
 		}
 	
@@ -181,7 +184,6 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 		}
 		protected IEnumerator chasePlayer ()
 		{
-				busy = true;
 				chasingPlayer = true;
 				run ();
 		
@@ -198,7 +200,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 				}
 		
 				chasingPlayer = false;
-				busy = false;
+		        busy = false;
 		}
 		protected IEnumerator TestCoroutine ()
 		{

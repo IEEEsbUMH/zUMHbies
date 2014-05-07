@@ -9,7 +9,7 @@ public class Zombie_Animation : MonoBehaviour {
 	//Mask
 	public bool AttackOut;
 	//Distance PlayerZombie
-	public GameObject Player;
+	protected GameObject Player;
 	public float Length;
 	public bool AttackIn;
 	protected bool Damage;
@@ -26,10 +26,12 @@ public class Zombie_Animation : MonoBehaviour {
 	protected ZombieBasicBehaviour myBehaviour;
 
 	void Start () {
+		Player = GameObject.Find ("Human");
 		InvokeRepeating ("Randomizar",1,4);
 		Animation_Zombie = GetComponent<Animator> ();
-		Animation_Zombie.SetLayerWeight (1, 2f);
-		Animation_Zombie.SetLayerWeight (2, 2f);
+		Animation_Zombie.SetLayerWeight (1, 3f);
+		Animation_Zombie.SetLayerWeight (2, 3f);
+		Animation_Zombie.SetLayerWeight (3, 3f);
 	    Controller = GetComponent<CharacterController>();
 		Collider = CapsuleCollider.gameObject.transform.GetComponent<CapsuleCollider>();
 		myBehaviour = GetComponent<ZombieBasicBehaviour> ();
