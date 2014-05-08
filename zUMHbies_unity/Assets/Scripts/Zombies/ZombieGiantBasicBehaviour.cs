@@ -29,6 +29,10 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 		protected float dist;
 		public Transform pos;
 		public bool Die;
+
+	    public float gravity = 20.0F;
+	    private Vector3 moveDirection = Vector3.zero;
+	    private CharacterController characterController;
 		//IKillable members
 		public int _MaxHealth {
 				get {
@@ -120,6 +124,9 @@ public class ZombieGiantBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByEx
 			}
 		}
 		*/
+		CharacterController controller = GetComponent<CharacterController>();
+		moveDirection.y -= gravity * Time.deltaTime;
+		controller.Move(moveDirection * Time.deltaTime);
 		}
 	
 		void OnTriggerStay (Collider a_collider)

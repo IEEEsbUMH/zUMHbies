@@ -29,6 +29,10 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 		protected int Destination = 0;
 		protected float dist;
 		public bool Die;
+
+	    public float gravity = 20.0F;
+	    private Vector3 moveDirection = Vector3.zero;
+	    private CharacterController characterController;
 		//IKillable members
 		public int _MaxHealth {
 				get {
@@ -53,7 +57,6 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 				get;
 				set;
 		}
-	
 		public void _TakeDamage (float a_damage, Vector3 a_hitPoint)
 		{
 				//print ("ayayayay");//falta que cuando pegas con las manos se llame a esta funcion
@@ -122,6 +125,9 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 			}
 		}
 		*/
+		CharacterController controller = GetComponent<CharacterController>();
+		moveDirection.y -= gravity * Time.deltaTime;
+		controller.Move(moveDirection * Time.deltaTime);
 		}
 	
 		void OnTriggerStay (Collider a_collider)
