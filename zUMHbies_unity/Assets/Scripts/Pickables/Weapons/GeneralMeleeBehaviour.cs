@@ -53,7 +53,11 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 						}
 				}
 		}
-		
+
+		public GameObject _OwnedBy {
+				get;
+				set;
+		}
 	
 		public override void _BeUsed ()
 		{
@@ -86,7 +90,7 @@ public class GeneralMeleeBehaviour : GeneralPickableBehaviour, IUsableAsMeleeWea
 				//Look for an IDamageable still not hit and act on it
 				IDamageable t_hitDamageable = a_collider.gameObject.Ext_GetClosestBehaviourWithInterfaceInHierarchy<IDamageable> ();
 
-				if (t_hitDamageable != null && !damagedThisAttack.Contains (t_hitDamageable)) {
+				if (t_hitDamageable != null && t_hitDamageable._OwnedBy != _OwnedBy && !damagedThisAttack.Contains (t_hitDamageable)) {
 						t_hitDamageable._TakeDamage (_TotalDamage, default(Vector3));
 						//print ("ouch");
 						damagedThisAttack.Add (t_hitDamageable);

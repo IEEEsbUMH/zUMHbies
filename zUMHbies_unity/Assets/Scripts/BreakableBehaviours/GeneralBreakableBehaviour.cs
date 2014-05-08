@@ -26,6 +26,11 @@ public class GeneralBreakableBehaviour : MonoBehaviour, IBreakable
 				}
 		}
 
+		public GameObject _OwnedBy {
+				get;
+				set;
+		}
+
 		public void _TakeDamage (float a_damage, Vector3 a_hitPoint=default(Vector3))
 		{
 				integrity -= a_damage;
@@ -34,6 +39,7 @@ public class GeneralBreakableBehaviour : MonoBehaviour, IBreakable
 				if (integrity <= 0)
 						_Break ();
 		}
+
 
 		public void _Break ()
 		{
@@ -44,5 +50,6 @@ public class GeneralBreakableBehaviour : MonoBehaviour, IBreakable
 		void Start ()
 		{
 				integrity = MaxIntegrity;
+				_OwnedBy = gameObject.Ext_GetTopParent ();
 		}
 }

@@ -78,6 +78,17 @@ public static class ExtensionMethods
 				return null;
 		}
 
+		public static GameObject Ext_GetTopParent (this GameObject a_gameObject)
+		{
+				GameObject r_gameObject = a_gameObject;
+
+				while (r_gameObject.transform.parent!=null) {
+						r_gameObject = r_gameObject.transform.parent.gameObject;
+				}
+
+				return r_gameObject;
+		}
+
 		//Returns true if there is nothing between origin and target
 		public static bool Ext_DirectRay (this GameObject a_gameObject, Vector3 a_from, Vector3 a_to, Collider a_target)
 		{

@@ -28,7 +28,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 
 		protected int Destination = 0;
 		protected float dist;
-	    public bool Die;
+		public bool Die;
 		//IKillable members
 		public int _MaxHealth {
 				get {
@@ -48,6 +48,11 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 						health = value;
 				}
 		}
+
+		public GameObject _OwnedBy {
+				get;
+				set;
+		}
 	
 		public void _TakeDamage (float a_damage, Vector3 a_hitPoint)
 		{
@@ -63,7 +68,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 		{
 				health = 0; //In case it was negative -not that important anyway-
 				GameCtrl.ZombiesOnStage--;
-		        Die = true;
+				Die = true;
 				//Scream or something
 		}
 		//END OF IKillable MEMBERS
@@ -100,6 +105,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 				health = MaxHealth;
 				myNavMeshAgent = GetComponent<NavMeshAgent> ();
 				myDestination = transform.position;
+				_OwnedBy = gameObject.Ext_GetTopParent ();
 		}
 	
 		// Update is called once per frame
@@ -134,7 +140,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 
 								StopCoroutine ("attentionTowards"); //Stops all previous attention
 								StartCoroutine ("attentionTowards", a_collider.transform.parent.position); //Real center of the light is in the parent of the light
-				                StartCoroutine (chasePlayer ());//No se muy bien si este es correcto
+								StartCoroutine (chasePlayer ());//No se muy bien si este es correcto
 								//}
 						}
 
@@ -197,7 +203,7 @@ public class ZombieBasicBehaviour : MonoBehaviour, IKillable, ISwitchedByExtTrig
 				}
 		
 				chasingPlayer = false;
-		        busy = false;
+				busy = false;
 		}
 		protected IEnumerator TestCoroutine ()
 		{

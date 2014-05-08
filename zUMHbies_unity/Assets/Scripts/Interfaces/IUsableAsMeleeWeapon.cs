@@ -25,5 +25,10 @@ public interface IUsableAsMeleeWeapon
 		bool _DoesDamage { //Will be set as true if it is currently doing damage
 				get;
 				set;
-		}	
+		}
+
+		GameObject _OwnedBy {
+				get;
+				set;
+		}
 }

@@ -17,11 +17,12 @@ public class GameControl : MonoBehaviour
 		public void Start ()
 		{
 				selectedSpawns = new List<Transform> ();
+				startNextWave ();
 		}
 
 		public void EndGame ()
 		{
-				GetComponent<GlobalSoundControl> ().PlayDeathSound ();
+				Application.LoadLevel ("TheEnd");
 		}
 
 		public void AddScore (int a_score)
